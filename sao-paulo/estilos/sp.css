@@ -249,7 +249,7 @@ div.ubatuba {
 
 div.rdg img {
     min-width: 142px;
-    max-width: 192px;
+    max-width: 172px;
     margin-top: 10px;
     padding: 5px;
     border-radius: 5px;
@@ -259,7 +259,7 @@ div.rdg img {
 
 div.cachoeira img {
     min-width: 142px;
-    max-width: 192px;
+    max-width: 172px;
     margin-top: 10px;
     padding: 5px;
     border-radius: 5px;
@@ -268,14 +268,13 @@ div.cachoeira img {
 }
 div.caiaque img {
     min-width: 142px;
-    max-width: 192px;
+    max-width: 172px;
     margin-top: 10px;
     padding: 5px;
     border-radius: 5px;
     box-shadow: 0px 0px 7px black;
     text-align: center;  
 }
-
 
 
 footer {
