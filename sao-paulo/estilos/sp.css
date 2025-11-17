@@ -251,6 +251,8 @@ div.rdg img {
     min-width: 142px;
     max-width: 192px;
     margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
     box-shadow: 0px 0px 7px black;
     text-align: center;    
 }
@@ -259,6 +261,8 @@ div.cachoeira img {
     min-width: 142px;
     max-width: 192px;
     margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
     box-shadow: 0px 0px 7px black;
     text-align: center;  
 }
@@ -266,6 +270,8 @@ div.caiaque img {
     min-width: 142px;
     max-width: 192px;
     margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
     box-shadow: 0px 0px 7px black;
     text-align: center;  
 }
