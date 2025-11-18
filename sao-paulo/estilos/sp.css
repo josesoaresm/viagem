@@ -7,7 +7,6 @@
     src: url('../fontes/Feeling\ Lovely.ttf');
 }
 
-
 :root {
     --cor0:#12C197;
     --cor1:#997708;
@@ -107,7 +106,6 @@ section.ibira {
 section.ibira > img {
     min-width: 280px;
     max-width: 768px;
-
     flex-basis: 700px;
     flex-shrink: 1; /* Pode crescer */
     flex-grow: 1;   /* Pode encilher */ 
@@ -115,7 +113,6 @@ section.ibira > img {
 
 section.resentes {
   border: 1px solid black; 
-
 }
 
 section.resentes > img {
@@ -130,13 +127,13 @@ article {
     background-image: linear-gradient(to left, #99770842, #c4a5a527);
     width: 100%;   
     margin-left: 0px;
-    margin-top: -10px;     
+    margin-top: 10px;     
 }
 
 article > img {
     min-width: 284px;
     max-width: 384px;
-    margin-top: 10px;
+    margin-top: 15px;
     box-shadow: 0px 0px 7px black;
     text-align: center;    
 }
@@ -218,13 +215,6 @@ div.video video {
     text-align: center; 
 }
 
-section.foto-aleatoria img {
-    min-width: 284px;
-    max-width: 384px;
-    margin-top: 10px;
-    box-shadow: 0px 0px 7px black;
-    text-align: center;    
-}
 section.ubatuba {
     background-color: rgba(0, 0, 255, 0.247);
     text-align: center;
@@ -245,6 +235,15 @@ div.ubatuba {
     max-width: 768px;
     display: flex;
     flex-flow: row wrap;  
+}
+
+div.recente img {
+     min-width: 284px;
+    max-width: 384px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 7px black;
+    text-align: center;
+
 }
 
 div.rdg img {
@@ -275,7 +274,6 @@ div.caiaque img {
     box-shadow: 0px 0px 7px black;
     text-align: center;  
 }
-
 
 footer {
     background-image: linear-gradient(to left, var(--cor4), var(--cor2));
