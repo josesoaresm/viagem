@@ -276,21 +276,14 @@ section.ubatuba {
     flex-flow: row wrap;    
 }
 
-section.ubatuba > img {
+div.recente > img {
     max-width: 384px;
     margin-top: 10px;
     box-shadow: 0px 0px 7px black;
     text-align: center;    
 }
 
-div.ubatuba {
-   background-color: #7eb2e615;
-    max-width: 768px;
-    display: flex;
-    flex-flow: row wrap;  
-}
-
-div.recente img {
+div. img {
     min-width: 284px;
     max-width: 384px;
     margin-top: 15px;
