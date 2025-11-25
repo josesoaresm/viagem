@@ -111,17 +111,52 @@ section.ibira > img {
     flex-grow: 1;   /* Pode encilher */ 
 }
 
-section.resentes {
+section.guararema {
   border: 1px solid black; 
 }
 
-section.resentes > img {
+div.guararema img {
     min-width: 284px;
     max-width: 384px;
     margin-top: 10px;
     box-shadow: 0px 0px 7px black;
     text-align: center;    
 }
+
+section.cabreuva {
+    background-color: rgba(60, 255, 0, 0.637);
+    text-align: center;
+    max-width: 768px;
+    margin-top: 15px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.cabreuva img {
+    min-width: 284px;
+    max-width: 384px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 7px black;
+    text-align: center;    
+}
+
+section.ilhacomp {
+     background-color: rgba(150, 120, 23, 0.637);
+    text-align: center;
+    max-width: 768px;
+    margin-top: 15px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.ilhacomp img {
+    min-width: 284px;
+    max-width: 384px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 7px black;
+    text-align: center;
+}
+
 
 article {
     background-image: linear-gradient(to left, #99770842, #c4a5a527);
@@ -216,14 +251,15 @@ div.video video {
 }
 
 section.atibaia {
-      background-color: rgba(0, 0, 255, 0.247);
+    background-color: rgba(60, 255, 0, 0.247);
     text-align: center;
     max-width: 768px;
+    margin-top: 15px;
     display: flex;
     flex-flow: row wrap;
 }
 
-div.imagem {
+div.atibaia img {
     min-width: 284px;
     max-width: 384px;
     margin-top: 15px;
@@ -235,6 +271,7 @@ section.ubatuba {
     background-color: rgba(0, 0, 255, 0.247);
     text-align: center;
     max-width: 768px;
+    margin-top: 10px;
     display: flex;
     flex-flow: row wrap;    
 }
