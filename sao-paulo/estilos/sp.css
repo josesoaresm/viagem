@@ -58,7 +58,7 @@ nav > a abbr img:hover {
 }
 
 main { 
-    background-color: #12c19875;  
+    background-color: #c1921273;  
     max-width: 768px;
     height: 100%;    
     margin-top: 45px;   
@@ -73,6 +73,7 @@ h1 {
 }
 
 h2 {
+   border-bottom: 3px solid #003C47;
     color: #0073E6;
     font-size: 1.3em;
     text-align: center;
@@ -80,10 +81,11 @@ h2 {
 }
 
 h3 {
-    color: #0073E6;
-    font-size: 0.6em;
+   color: #0073E6;
+   font-size: 0.6em;
    text-align: center;
-    margin: auto;    
+   margin: auto;   
+   padding: 5px; 
 }
 
 p {
@@ -306,8 +308,9 @@ div.grid-ubt {
 div.grid-ubt img {
    width: 45%;
     height: auto;
+    border: 5px solid rgb(255, 255, 255);
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.363);
     transition: transform 0.3s;
     margin-left: 10px;
   }
