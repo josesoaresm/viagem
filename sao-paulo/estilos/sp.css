@@ -268,12 +268,19 @@ div.atibaia img {
 }
 
 section.ubatuba {
-    background-color: rgba(0, 0, 255, 0.247);
+    background-color: rgba(117, 156, 11, 0.507);
     text-align: center;
     max-width: 768px;
     margin-top: 10px;
     display: flex;
     flex-flow: row wrap;    
+}
+
+div.solevida img {
+     max-width: 384px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 7px black;
+    text-align: center;
 }
 
 div.recente > img {
@@ -283,7 +290,7 @@ div.recente > img {
     text-align: center;    
 }
 
-div. img {
+div.img {
     min-width: 284px;
     max-width: 384px;
     margin-top: 15px;
@@ -291,26 +298,15 @@ div. img {
     text-align: center;
 }
 
-div.rdg img {
-    min-width: 142px;
-    max-width: 172px;
+div.cachoeira {
+    text-align: center;
+    max-width: 768px;
     margin-top: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 7px black;
-    text-align: center;    
+    display: flex;
+    flex-flow: row wrap;  
 }
 
 div.cachoeira img {
-    min-width: 142px;
-    max-width: 172px;
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 7px black;
-    text-align: center;  
-}
-div.caiaque img {
     min-width: 142px;
     max-width: 172px;
     margin-top: 10px;
