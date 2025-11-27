@@ -303,17 +303,18 @@ div.grid-ubt {
     gap: 20px;               /* espaço entre os itens */
     justify-content: center; /* centraliza os itens */
     padding: 20px;
+   
   }
 
-div.grid-ubt .cachoeira {
-   width: 250px;            /* tamanho de cada card */
+div.grid-ubt .item {
+   width: 150px;            /* tamanho de cada card */
     text-align: center;
   }
 
 div.grid-ubt img {
     width: 100%;
     height: auto;
-    border-radius: 8px;      /* opcional */
+    border-radius: 8px;  /* opcional */
     
 }
   
