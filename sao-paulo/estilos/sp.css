@@ -305,8 +305,8 @@ div.grid-ubt {
     padding: 20px;
   }
 
-div.grid-ubt.ubt {
-   width: 142px;            /* tamanho de cada card */
+div.grid-ubt .cachoeira {
+   width: 100px;            /* tamanho de cada card */
     text-align: center;
   }
 
@@ -314,7 +314,7 @@ div.grid-ubt img {
     width: 100%;
     height: auto;
     border-radius: 8px;      /* opcional */
-    box-shadow: 15px 10px 2px rgba(5, 25, 207, 0.527);
+    
 }
   
 div.grid-ubt img:hover {
