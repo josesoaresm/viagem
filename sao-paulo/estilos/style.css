@@ -57,6 +57,7 @@ h1 {
 h2 {
     font-family:var(--fonte-padrao);
     color: var(--cor1);
+    text-align: center;
 }
 
 h3 {
@@ -196,7 +197,7 @@ p {
 }
 
 .antiga {
-     width: 100px;            /* tamanho de cada card */
+     width: 150px;            /* tamanho de cada card */
     text-align: center;
 }
 
