@@ -92,7 +92,7 @@ p {
     gap: 10px;               /* espaço entre os itens */
     justify-content: center; /* centraliza os itens */
     padding: 0px;
-    
+}    
 
 .guarar {
     width: 450px;            /* tamanho de cada card */
