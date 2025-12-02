@@ -60,7 +60,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 0.6em;
     margin-top: 10px;
     color: rgba(5, 25, 207, 0.527); 
     text-align: center;  
@@ -68,7 +68,7 @@ h3 {
 
 p {
     font-family: var(--fonte-destaque);
-    font-size: 0.6em;
+    font-size: 0.8em;
     color: var(--cor2);
     text-align: center;
 }
@@ -77,7 +77,7 @@ p {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
     justify-content: center; /* centraliza os itens */
-    padding: -10px;
+    padding: 0px;
 }
 
 .ibira img {
@@ -89,14 +89,13 @@ p {
 .guararema {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
-    gap: 20px;               /* espaço entre os itens */
+    gap: 10px;               /* espaço entre os itens */
     justify-content: center; /* centraliza os itens */
-    padding: 20px;
-    border: 2px solid black;
-}
+    padding: 0px;
+    
 
 .guarar {
-    width: 400px;            /* tamanho de cada card */
+    width: 450px;            /* tamanho de cada card */
     text-align: center;
 }
 
@@ -112,7 +111,7 @@ p {
     flex-wrap: wrap;         
     gap: 10px;               
     justify-content: center; 
-    padding: 20px;
+    padding: 10px;
 }
 
 .cabre {
