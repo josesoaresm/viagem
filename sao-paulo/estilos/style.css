@@ -132,7 +132,7 @@ p {
     gap: 10px;               
     justify-content: center; 
     padding: 0px;  
-    background-color: rgba(127, 255, 212, 0.596);
+    background-color: rgba(255, 236, 127, 0.596);
 }
 
 .comprida {
@@ -143,7 +143,7 @@ p {
    width: 100%;
     height: auto;
     border-radius: 10px;      
-    box-shadow: 12px 2px rgba(5, 207, 113, 0.527); 
+    box-shadow: 8px 8px 12px rgba(109, 5, 207, 0.527); 
 }
 
 .atibaia {
@@ -164,6 +164,7 @@ p {
     width: 100%;
     height: auto;
     border-radius: 8px;      /* opcional */
+    border: 2px solid rgba(79, 42, 165, 0.192);
     
 }
 
