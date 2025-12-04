@@ -181,11 +181,16 @@ p {
     padding: 0px;
 }
 
+.recente {
+    width: 350px;            /* tamanho de cada card */
+    text-align: center;  
+}
 .recente img {
-    width: 300px;
+    width: 350px;
     height: auto;
     border-radius: 0px;
-     box-shadow: 12px 8px 5px rgba(5, 207, 113, 0.527); 
+    box-shadow: 12px 8px 5px rgba(5, 207, 113, 0.527); 
+   
 } 
 
 .cachoeira {
