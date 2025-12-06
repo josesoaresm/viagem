@@ -117,7 +117,7 @@ p {
 }
 
 .cabre {
-    width: 300px;            /* tamanho de cada card */
+    width: 400px;            /* tamanho de cada card */
     text-align: center;
 }
 
@@ -131,8 +131,7 @@ p {
     flex-wrap: wrap;         
     gap: 10px;               
     justify-content: center; 
-    padding: 0px;  
-    background-color: rgba(255, 236, 127, 0.596);
+    padding: 0px;     
 }
 
 .comprida {
@@ -151,12 +150,13 @@ p {
     flex-wrap: wrap;         /* permite quebrar linha */
     gap: 10px;               /* espaço entre os itens */
     justify-content: center; /* centraliza os itens */
-    padding: 20px;
-    
+    padding: 0px;
+    margin-top: -10px;
+   
 }
 
 .atb {
-    width: 400px;            /* tamanho de cada card */
+    width: 480px;            /* tamanho de cada card */
     text-align: center;
 }
 
@@ -175,11 +175,12 @@ p {
 }
 
 .ubatuba {
-   display: flex;
+    display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
     gap: 10px;               /* espaço entre os itens */
     justify-content: center; /* centraliza os itens */
     padding: 0px;
+    margin-top: -10px;
 }
 
 .recente {
@@ -191,6 +192,7 @@ p {
     height: auto;
     border-radius: 0px;
     box-shadow: 12px 8px 5px rgba(5, 207, 113, 0.527); 
+    border: 2px solid rgba(79, 42, 165, 0.192);
    
 } 
 
