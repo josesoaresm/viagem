@@ -126,6 +126,26 @@ p {
     height: auto; 
 }
 
+.paranapiacaba {
+   display: flex;
+    flex-wrap: wrap;         
+    gap: 10px;               
+    justify-content: center; 
+    padding: 0px;     
+}
+
+.piacaba {
+     width: 450px;           
+}
+
+.piacaba img {
+   width: 100%;
+    height: auto;
+    border-radius: 10px;      
+    border: 2px solid rgba(0, 0, 255, 0.363);
+}
+
+
 .ilha {
    display: flex;
     flex-wrap: wrap;         
