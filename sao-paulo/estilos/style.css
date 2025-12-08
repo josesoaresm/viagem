@@ -165,6 +165,28 @@ p {
     box-shadow: 8px 8px 12px rgba(109, 5, 207, 0.527); 
 }
 
+.pedal {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+    margin-top: -10px; 
+}
+
+.anchieta {
+     width: 450px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+.anchieta img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;      /* opcional */
+    border: 2px solid rgba(79, 42, 165, 0.192);
+     
+}
+
 .atibaia {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
