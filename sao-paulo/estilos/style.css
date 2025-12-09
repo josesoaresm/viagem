@@ -148,14 +148,14 @@ p {
 .ponte {
     display: flex;
     flex-wrap: wrap;         
-    gap: 10px;               
+    gap: 5px;               
     justify-content: center; 
-    padding: 0px;
 }
 
 .ponte img {
     width: 250px;
     height: auto;
+    border: 2px solid black;
 }
 
 .funicular {
