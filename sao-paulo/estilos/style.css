@@ -71,7 +71,7 @@ p {
     font-family: var(--fonte-destaque);
     font-size: 0.8em;
     color: var(--cor2);
-    text-align: center;
+    text-align: justify;
 }
 
 .ibira {
