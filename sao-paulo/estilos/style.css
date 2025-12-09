@@ -127,7 +127,8 @@ p {
 }
 
 .paranapiacaba {
-   display: flex;
+    background-color: #e2cbcbad;
+    display: flex;
     flex-wrap: wrap;         
     gap: 10px;               
     justify-content: center; 
