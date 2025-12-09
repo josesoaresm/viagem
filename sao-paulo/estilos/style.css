@@ -168,6 +168,10 @@ p {
     border-radius: 10px;  
 }
 
+.funicular img:hover {
+    transform: scale(1.3);
+}
+
 
 .ilha {
    display: flex;
