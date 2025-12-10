@@ -125,7 +125,7 @@ p {
     width: 100%;
     height: auto; 
 }
-
+/*====================================*/
 .paranapiacaba {
     background-color: #e2cbcbad;
     display: flex;
@@ -156,7 +156,7 @@ p {
 .ponte img {
     width: 200px;
     height: auto;
-    border: 2px solid rgba(0, 0, 0, 0.425);
+    border: 1px solid rgba(0, 0, 0, 0.425);
 }
 
 .funicular {
@@ -171,7 +171,7 @@ p {
 .funicular img:hover {
     transform: scale(1.3);
 }
-
+/*=====================*/
 
 .ilha {
    display: flex;
