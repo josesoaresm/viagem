@@ -177,13 +177,13 @@ p {
 .jundiai {
     display: flex;
     flex-wrap: wrap;         
-    gap: 10px;               
+    gap: 5px;               
     justify-content: center; 
     padding: 0px; 
 }
 
 .jund {
-     width: 220px;
+     width: 200px;
 }
 
 .jund img {
