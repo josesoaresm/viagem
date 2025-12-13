@@ -183,7 +183,7 @@ p {
 }
 
 .jund {
-     width: 200px;
+     width: 150px;
 }
 
 .jund img {
@@ -235,7 +235,8 @@ p {
 }
 
 .rio_pardo {
-   display: flex;
+    background-color: rgba(169, 169, 169, 0.452);
+    display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
     gap: 10px;               /* espaço entre os itens */
     justify-content: center; /* centraliza os itens */
@@ -244,7 +245,7 @@ p {
 }
 
 .pardo {
-     width: 450px;            /* tamanho de cada card */
+     width: 440px;            /* tamanho de cada card */
     text-align: center;
 }
 
