@@ -74,6 +74,11 @@ p {
     text-align: justify;
 }
 
+main {
+    background-color: aliceblue;
+    margin: 0px;
+}
+
 .ibira {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
@@ -245,14 +250,14 @@ p {
 }
 
 .pardo {
-     width: 420px;            /* tamanho de cada card */
+     width: 400px;            /* tamanho de cada card */
     text-align: center;
 }
 
 .pardo img {
     width: 100%;
     height: auto;
-    box-shadow: 12px 8px 5px rgba(207, 5, 15, 0.527);
+    box-shadow: 8px 8px 8px rgba(207, 5, 15, 0.527);
 }
 
 .atibaia {
