@@ -222,7 +222,7 @@ p {
 }
 
 .anchieta {
-     width: 450px;            /* tamanho de cada card */
+    width: 450px;            /* tamanho de cada card */
     text-align: center;
 }
 
@@ -232,6 +232,26 @@ p {
     border-radius: 8px;      /* opcional */
     border: 2px solid rgba(79, 42, 165, 0.192);
      
+}
+
+.rio_pardo {
+   display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+    margin-top: -10px; 
+}
+
+.pardo {
+     width: 450px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+.pardo img {
+    width: 100%;
+    height: auto;
+    box-shadow: 12px 8px 5px rgba(207, 5, 15, 0.527);
 }
 
 .atibaia {
