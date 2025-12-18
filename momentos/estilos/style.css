@@ -80,6 +80,8 @@ main {
     font-size: 0.8em;
     text-align: justify;
     color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
  
@@ -147,6 +149,24 @@ main {
   .grid-joao img:hover {
     transform: scale(1.05);
 
+  }
+
+  .parque {
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 400px;
+    margin: 0px;
+    /*border: 2px solid blue;*/
+    background-color: #08949941;
+  }
+
+  .parque img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
   }
 
   footer {
