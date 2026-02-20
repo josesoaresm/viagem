@@ -93,6 +93,26 @@ main {
 
 }
 
+.juqitiba {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+}
+
+.juqui {
+    width: 450px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+.juqui img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;      /* opcional */
+    box-shadow: 2px 2px rgba(5, 25, 207, 0.527);
+}
+
 .guararema {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
