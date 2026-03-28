@@ -1,0 +1,47 @@
+# Dependências do Node
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Configurações do VS Code
+.vscode/
+
+# Arquivos de ambiente
+.env
+.env.*
+
+# Build / dist (caso use futuramente)
+dist/
+build/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Arquivos temporários
+tmp/
+temp/
+
+# Cobertura de testes
+coverage/
+
+# Arquivos de lock (opcional - geralmente manter o package-lock.json)
+# package-lock.json
+
+# Arquivos específicos de sistema Linux
+*~
+
+# Arquivos do Live Server (às vezes gera configs locais)
+*.history
+
+# Arquivos de configuração locais
+*.local
