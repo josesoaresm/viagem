@@ -93,6 +93,27 @@ main {
 
 }
 
+sf-xavier {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+
+}
+
+.xavier {
+    width: 370px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+.xavier img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;      /* opcional */
+    box-shadow: 2px 2px rgba(5, 25, 207, 0.527);
+}
+
 .juqitiba {
       display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
