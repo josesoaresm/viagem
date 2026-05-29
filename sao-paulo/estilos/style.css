@@ -130,6 +130,16 @@ h3 {
     text-align: center;  
 }
 
+p {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    color: var(--cor4);
+    line-height: 1.6;
+    margin-bottom: 60px;
+    padding: 0px 10px;
+}
+
+
 .main {
     background-color: aliceblue;
     margin: 0px;
@@ -489,21 +499,30 @@ div.liliane {
 }
 
 div.li img {
-    width: 160px;
-    padding: 5px;
-    margin-left: 20px;
-    margin-top: 10px;
-    box-shadow: 0px 0px 7px black;
-}
-
-div.li2 img {
-    width: 160px;
+     width: 160px;
     padding: 5px;
     transition: transform 0.5s ease-in-out;
     margin-left: 5px;
     margin-top: 10px;
-    box-shadow: 0px 0px 7px black;    
+    box-shadow: 0px 0px 7px black;
 }
+div.li img:hover {
+    transform: scale(1.2);
+}
+
+
+div.li2 img {
+     width: 160px;
+    padding: 5px;
+    transition: transform 0.5s ease-in-out;
+    margin-left: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 7px black;  
+}
+div.li2 img:hover {
+    transform: scale(1.2);
+}
+
 .videoantigo {
     width: 384px;
 }
