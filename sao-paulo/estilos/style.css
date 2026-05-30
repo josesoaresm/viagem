@@ -115,7 +115,8 @@ h1 {
 }
 
 h2 {
-     font-family:'Poppins',sans-serif;  
+    font-family:'Poppins',sans-serif; 
+    font-size: 1em; 
     text-align: center;
     margin: 10px 0px 10px 0px; /*10px acima 10px abaixo 0px direita 10px esquerda*/
     border-left: 5px solid var(--cor0);
@@ -237,12 +238,12 @@ p {
 }
 /*====================================*/
 .paranapiacaba {
-    background-color: #e2cbcbad;
     display: flex;
     flex-wrap: wrap;         
     gap: 10px;               
     justify-content: center; 
-    padding: 0px;     
+    padding: 0px; 
+    margin-top: 10px;    
 }
 
 .piacaba {
@@ -345,13 +346,12 @@ p {
 }
 
 .rio_pardo {
-    background-color: rgba(169, 169, 169, 0.452);
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
     gap: 10px;               /* espaço entre os itens */
     justify-content: center; /* centraliza os itens */
     padding: 0px;
-    margin-top: -10px; 
+    margin-top: 10px; 
 }
 
 .pardo {
