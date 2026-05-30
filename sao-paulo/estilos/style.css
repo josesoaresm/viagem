@@ -467,10 +467,11 @@ section.aleatoria {
 }
 
 div.foto {
-    background-color: #7eb2e615;
-    max-width: 768px;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
 }
 
 div.arnaldo img {
