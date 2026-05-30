@@ -542,13 +542,9 @@ div.li2 img:hover {
     transform: scale(1.2);
 }
 
-.videoantigo {
-    width: 384px;
-}
-
-.videoantigo video {
-    min-width: 284px;
-    max-width: 384px;
+div.videoantigo video {
+   width: 100%;
+    height: auto;
     margin-top: 10px;
     box-shadow: 0px 0px 7px black;
     text-align: center; 
