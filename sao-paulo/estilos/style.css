@@ -1,0 +1,565 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Great+Vibes&display=swap');
+
+@font-face {
+    font-family: 'Feeling Lovely';
+    src: url('../fontes/Feeling\ Lovely.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor0:#12C197;
+    --cor1:#997708;
+    --cor2:#0073E6;
+    --cor3:#c4a5a5;
+    --cor4:#003C47;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-feeling: 'Feeling Lovely', cursive;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#eef4ff,#f8fbff);
+    color:#334155;
+    overflow-x:hidden;
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+
+/* ================= HEADER ================= */
+
+header{
+    min-height:70vh;
+    background: linear-gradient(rgba(15,23,42,.75),rgba(15,23,42,.7)),
+    url('imagens/ibira.JPG') center center / cover no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 20px;
+    position:relative;
+}
+
+.hero{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:clamp(2.8rem,8vw,6rem);
+    color:white;
+    font-weight:700;
+    letter-spacing:3px;
+    margin-bottom:20px;
+    text-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+.hero p{
+    color:#e2e8f0;
+    font-size:1.1rem;
+    line-height:1.8;
+    max-width:700px;
+    margin: ;
+}
+
+/* ================= NAV ================= */
+
+nav{
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:999;
+    display:flex;
+    gap:5px;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,.2);
+    padding:10px 16px;
+    border-radius:50px;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+nav a img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+    transition:.3s;
+    border:2px solid transparent;
+}
+
+nav a img:hover{
+    transform:translateY(-4px) scale(1.08);
+    border-color:white;
+}
+
+h1 {
+    font-family: var(--fonte-padrao);   
+    font-size: 2em;
+    color: var(--cor3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247); 
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+h2 {
+     font-family:'Poppins',sans-serif;  
+    text-align: center;
+    margin: 10px 0px 10px 0px; /*10px acima 10px abaixo 0px direita 10px esquerda*/
+    border-left: 5px solid var(--cor0);
+    padding-bottom: 10px;
+    
+}
+
+h3 {
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: var(--cor2); 
+    text-align: center;  
+}
+
+p {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    color: var(--cor4);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+
+
+.main {
+    background-color: aliceblue;
+    margin: 0px;
+}
+
+.ibira {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+}
+
+.ibira img {
+    width: 100%;
+    height: 100%;
+    margin-top: -21px;
+}
+
+.sf-xavier {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+}
+
+.xavier {
+    width: 370px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+.xavier img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;      /* opcional */
+    box-shadow: 2px 2px rgba(5, 25, 207, 0.527);
+}
+
+.juquitiba {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+}
+
+.juqui {
+    width: 370px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+.juqui img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;      /* opcional */
+    box-shadow: 2px 2px rgba(5, 25, 207, 0.527);
+}
+
+.guararema {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+}    
+
+.guarar {
+    width: 450px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+.guarar img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;      /* opcional */
+    box-shadow: 2px 2px rgba(5, 25, 207, 0.527);
+}
+
+.cabreuva {
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 10px;               
+    justify-content: center; 
+    padding: 0px;
+}
+
+.cabre {
+    width: 400px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+.cabre img {
+    width: 100%;
+    height: auto; 
+}
+/*====================================*/
+.paranapiacaba {
+    background-color: #e2cbcbad;
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 10px;               
+    justify-content: center; 
+    padding: 0px;     
+}
+
+.piacaba {
+     width: 450px;           
+}
+
+.piacaba img {
+   width: 100%;
+    height: auto;
+    border-radius: 10px;      
+    border: 2px solid rgba(0, 0, 255, 0.363);
+}
+
+.ponte {
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 2px;               
+    justify-content: center; 
+}
+
+.ponte img {
+    width: 200px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    box-shadow: 2px 2px rgba(67, 159, 212, 0.527);
+}
+
+.funicular {
+    width: 100px;
+}
+.funicular img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;  
+}
+
+.funicular img:hover {
+    transform: scale(1.3);
+}
+/*=====================*/
+
+.jundiai {
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 5px;               
+    justify-content: center; 
+    padding: 0px; 
+}
+
+.jund {
+     width: 150px;
+}
+
+.jund img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.ilha {
+    background-color: rgba(0, 255, 255, 0.171);
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 10px;               
+    justify-content: center; 
+    padding: 0px;     
+}
+
+.comprida {
+     width: 350px;           
+}
+
+.comprida img {
+   width: 100%;
+    height: auto;
+    border-radius: 10px;      
+    box-shadow: 8px 8px 12px rgba(109, 5, 207, 0.288); 
+}
+
+.pedal {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+    margin-top: -10px; 
+}
+
+.anchieta {
+    width: 450px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+.anchieta img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;      /* opcional */
+    border: 2px solid rgba(79, 42, 165, 0.192);
+     
+}
+
+.rio_pardo {
+    background-color: rgba(169, 169, 169, 0.452);
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+    margin-top: -10px; 
+}
+
+.pardo {
+    width: 400px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+.pardo img {
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 8px 8px rgba(207, 5, 15, 0.527);
+}
+
+.atibaia {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+    margin-top: -10px;
+   
+}
+
+.atb {
+    width: 450px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+.atb img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;      /* opcional */
+    border: 2px solid rgba(79, 42, 165, 0.192);
+    
+}
+
+div.francisco img {
+      width: 100%;
+    height: auto;
+    border-radius: 8px;
+  
+}
+
+div.solevida img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;      /* opcional */
+}
+
+.ubatuba {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+    margin-top: -10px;
+}
+
+.recente {
+    width: 350px;            /* tamanho de cada card */
+    text-align: center; 
+}
+.recente img {
+    width: 350px;
+    height: auto;
+    border-radius: 0px;
+    box-shadow: 12px 8px 5px rgba(5, 207, 113, 0.527); 
+    border: 2px solid rgba(79, 42, 165, 0.192);   
+} 
+
+.cachoeira {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px; 
+}
+
+.antiga {
+    width: 150px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+.antiga img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/*============================== Quando cheguei em São Paulo ====================================*/
+
+article {
+    width: 100%;   
+    margin-left: 0px;
+    margin-top: 10px;     
+}
+
+article > img {
+    min-width: 284px;
+    max-width: 384px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 7px black;
+    text-align: center;    
+}
+ 
+article > p {
+    margin-left: 10px;
+}
+
+section.aleatoria {
+    max-width: 768px;
+    display: flex;
+    flex-flow: row wrap;    
+}
+
+div.foto {
+    background-color: #7eb2e615;
+    max-width: 768px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.arnaldo img {
+    width: 160px;
+    padding: 5px;
+    transition: transform 0.5s ease-in-out;
+    margin-left: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 7px black;    
+}
+
+div.arnaldo img:hover {
+    transform: scale(1.2);
+}
+
+div.isabel img {
+    width: 160px;
+    padding: 5px;
+    transition: transform 0.5s ease-in-out;
+    margin-left: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 7px black;
+}
+
+div.isabel img:hover {
+    transform: rotate(360deg);
+}
+
+div.liliane {
+    display: flex;
+    flex-wrap: wrap;         /* permite quebrar linha */
+    gap: 10px;               /* espaço entre os itens */
+    justify-content: center; /* centraliza os itens */
+    padding: 0px;
+}
+
+div.li{
+    width: 150px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+div.li img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    margin-left: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 7px black;  
+}
+div.li img:hover {
+    transform: scale(1.2);
+}
+
+div.li2 {
+    width: 150px;            /* tamanho de cada card */
+    text-align: center;
+}
+
+div.li2 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    margin-left: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 7px black;  
+}
+div.li2 img:hover {
+    transform: scale(1.2);
+}
+
+.videoantigo {
+    width: 384px;
+}
+
+.videoantigo video {
+    min-width: 284px;
+    max-width: 384px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 7px black;
+    text-align: center; 
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0f172a;
+    color:#cbd5e1;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:50px;
+    font-size:.95rem;
+}
