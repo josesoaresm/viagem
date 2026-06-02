@@ -159,7 +159,7 @@ p {
     height: 100%;
     margin-top: -21px;
 }
-
+/*====================sÃO FRANCISCO XAVIER====================================*/
 .sf-xavier {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
@@ -179,7 +179,7 @@ p {
     border-radius: 8px;      /* opcional */
     box-shadow: 2px 2px rgba(5, 25, 207, 0.527);
 }
-
+/*====================JUQUITIBA====================================*/
 .juquitiba {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
@@ -199,7 +199,7 @@ p {
     border-radius: 8px;      /* opcional */
     box-shadow: 2px 2px rgba(5, 25, 207, 0.527);
 }
-
+/*====================GUARAREMA====================================*/
 .guararema {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
@@ -227,7 +227,7 @@ p {
     justify-content: center; 
     padding: 0px;
 }
-
+/*====================CABREÚVA=======================================*/
 .cabre {
     width: 400px;            /* tamanho de cada card */
     text-align: center;
@@ -237,7 +237,7 @@ p {
     width: 100%;
     height: auto; 
 }
-/*====================================*/
+/*=======================PARANAPIACABA=============================*/
 .paranapiacaba {
     display: flex;
     flex-wrap: wrap;         
@@ -278,7 +278,7 @@ p {
     height: auto;
     border-radius: 10px; 
 }
-
+/*====================ILAH COMPRIDA====================================*/
 .ilha {
     display: flex;
     flex-wrap: wrap;         
@@ -297,7 +297,7 @@ p {
     border-radius: 10px;      
     box-shadow: 8px 8px 12px rgba(109, 5, 207, 0.288); 
 }
-
+/*====================PEDAL ANCHIETA====================================*/
 .pedal {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
@@ -319,7 +319,7 @@ p {
     border: 2px solid rgba(79, 42, 165, 0.192);
      
 }
-
+/*====================SÃO JOSÉ DO RIO PARDO=============================*/
 .rio_pardo {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
@@ -339,7 +339,7 @@ p {
     height: auto;
     box-shadow: 8px 8px 8px rgba(207, 5, 15, 0.527);
 }
-
+/*====================ATIBAIA====================================*/
 .atibaia {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
@@ -362,7 +362,7 @@ p {
     border: 2px solid rgba(79, 42, 165, 0.192);
     
 }
-
+/*====================UBATUBA===================================*/
 div.francisco img {
     width: 100%;
     height: auto;
