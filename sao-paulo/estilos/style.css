@@ -167,88 +167,12 @@ p {
     border-radius: 8px;      /* opcional */
     box-shadow: 2px 2px rgba(5, 25, 207, 0.527);
 }
-/*====================JUQUITIBA====================================*/
-.juquitiba {
-    display: flex;
-    flex-wrap: wrap;         /* permite quebrar linha */
-    gap: 10px;               /* espaço entre os itens */
-    justify-content: center; /* centraliza os itens */
-    padding: 0px;
-}
-
-.juqui {
-    width: 370px;            /* tamanho de cada card */
-    text-align: center;
-}
-
-.juqui img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;      /* opcional */
-    box-shadow: 2px 2px rgba(5, 25, 207, 0.527);
-}
-/*====================GUARAREMA====================================*/
-.guararema {
-    display: flex;
-    flex-wrap: wrap;         /* permite quebrar linha */
-    gap: 10px;               /* espaço entre os itens */
-    justify-content: center; /* centraliza os itens */
-    padding: 0px;
-}    
-
-.guarar {
-    width: 450px;            /* tamanho de cada card */
-    text-align: center;
-}
-
-.guarar img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;      /* opcional */
-    box-shadow: 2px 2px rgba(5, 25, 207, 0.527);
-}
-
-.cabreuva {
-    display: flex;
-    flex-wrap: wrap;         
-    gap: 10px;               
-    justify-content: center; 
-    padding: 0px;
-}
-/*====================CABREÚVA=======================================*/
-.cabre {
-    width: 400px;            /* tamanho de cada card */
-    text-align: center;
-}
-
-.cabre img {
-    width: 100%;
-    height: auto; 
-}
-/*=======================PARANAPIACABA=============================*/
-.paranapiacaba {
-    display: flex;
-    flex-wrap: wrap;         
-    gap: 10px;               
-    justify-content: center; 
-    padding: 0px; 
-    margin-top: 10px;    
-}
-
-.piacaba {
-     width: 450px;           
-}
-
-.piacaba img {
-   width: 100%;
-    height: auto;
-    border-radius: 10px;      
-    border: 2px solid rgba(0, 0, 255, 0.116);
-}
-
-/*====================FUNICULAR====================================*/
-
-/*=====================JUNDIAÍ=====================================*/
+/*=======================JUQUITIBA====================================*/
+/*=======================GUARAREMA=====================================*/
+/*=======================CABREÚVA=======================================*/
+/*=======================PARANAPIACABA==================================*/
+/*=======================FUNICULAR======================================*/
+/*=======================JUNDIAÍ========================================*/
 .jundiai {
     display: flex;
     flex-wrap: wrap;         
@@ -266,48 +190,9 @@ p {
     height: auto;
     border-radius: 10px; 
 }
-/*====================ILAH COMPRIDA====================================*/
-.ilha {
-    display: flex;
-    flex-wrap: wrap;         
-    gap: 10px;               
-    justify-content: center; 
-    padding: 0px;     
-}
-
-.comprida {
-     width: 350px;           
-}
-
-.comprida img {
-   width: 100%;
-    height: auto;
-    border-radius: 10px;      
-    box-shadow: 8px 8px 12px rgba(109, 5, 207, 0.288); 
-}
-/*====================PEDAL ANCHIETA====================================*/
-.pedal {
-    display: flex;
-    flex-wrap: wrap;         /* permite quebrar linha */
-    gap: 10px;               /* espaço entre os itens */
-    justify-content: center; /* centraliza os itens */
-    padding: 0px;
-    margin-top: -10px; 
-}
-
-.anchieta {
-    width: 450px;            /* tamanho de cada card */
-    text-align: center;
-}
-
-.anchieta img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;      /* opcional */
-    border: 2px solid rgba(79, 42, 165, 0.192);
-     
-}
-/*====================SÃO JOSÉ DO RIO PARDO=============================*/
+/*=======================ILHA COMPRIDA========================================*/
+/*=======================PEDAL ANCHIETA=======================================*/
+/*=======================SÃO JOSÉ DO RIO PARDO================================*/
 .rio_pardo {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
@@ -327,7 +212,7 @@ p {
     height: auto;
     box-shadow: 8px 8px 8px rgba(207, 5, 15, 0.527);
 }
-/*====================ATIBAIA====================================*/
+/*===========================ATIBAIA===========================================*/
 .atibaia {
     display: flex;
     flex-wrap: wrap;         /* permite quebrar linha */
@@ -350,7 +235,7 @@ p {
     border: 2px solid rgba(79, 42, 165, 0.192);
     
 }
-/*====================UBATUBA===================================*/
+/*==========================UBATUBA============================================*/
 div.francisco img {
     width: 100%;
     height: auto;
