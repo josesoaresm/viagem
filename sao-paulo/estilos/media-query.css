@@ -1,4 +1,5 @@
-/*=====================CABREUNA 8 ISLID=================*/
+
+/*=====================CABREUNA 8 ISLIDES=================*/
 .container {
             width: 90%;
             max-width: 1200px;
@@ -34,7 +35,6 @@
             object-fit: cover; /* Garante que a imagem preencha sem distorcer */
             display: block;
         }
-
         /* Legendas opcionais */
         .caption {
             position: absolute;
