@@ -226,28 +226,7 @@ p {
     box-shadow: 8px 8px 8px rgba(207, 5, 15, 0.527);
 }
 /*===========================ATIBAIA===========================================*/
-.atibaia {
-    display: flex;
-    flex-wrap: wrap;         /* permite quebrar linha */
-    gap: 10px;               /* espaço entre os itens */
-    justify-content: center; /* centraliza os itens */
-    padding: 0px;
-    margin-top: -10px;
-   
-}
 
-.atb {
-    width: 450px;            /* tamanho de cada card */
-    text-align: center;
-}
-
-.atb img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;      /* opcional */
-    border: 2px solid rgba(79, 42, 165, 0.192);
-    
-}
 /*==========================UBATUBA============================================*/
 div.francisco img {
     width: 100%;
