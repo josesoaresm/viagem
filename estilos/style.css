@@ -26,54 +26,44 @@
 
 html, body {
     min-height: 100vh;
-}
-
-body {
-     font-family: Arial, Helvetica, sans-serif;
-}
-
-header {  
-    background-color: white;   
-    /*background-image: linear-gradient(to left, var(--cor4), var(--cor2));*/
-    position: fixed;
-    top: 0px;    
-    font-family: var(--fonte-padrao); 
-    color: rgb(196, 165, 165);  
-    padding: 5px;
-    text-align: center;  
-    width: 100vw;   
-    border: 2px solid rgba(0, 0, 255, 0.144);   
-}
-
-menu img {
-    width: 30px;
-    border-radius: 5px;
-}
-
-nav { 
-    position: fixed;
-    top: 15px;
-    padding: 5px; 
-    width: 130px;           
-}
-
-nav > a > abbr img {
-    width: 40px;
-    border-radius: 50%;
-    border: solid rgba(0, 0, 0, 0.096); 
-    box-sizing: border-box;
     
 }
-nav > a abbr img:hover {
-    border: 2px solid rgba(255, 255, 255, 0.637);
-    transform: translate(-2px, -2px); /*para mexer o botão zinho*/
-    transition: tranform .2s, border .3s; /*Pra transformação aparecder em 1/3 de segundos e a borda em 1s*/
+
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    background:rgba(15,23,42,.85);
+    backdrop-filter:blur(15px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
 }
 
-h1 {
-    font-family: var(--fonte-feeling);
-    font-size: 2.5em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247);
+header h1{
+    font-size:1.5rem;
+    font-weight:800;
+    letter-spacing:4px;
+    color:white;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+/*==========Fundo geral moderno==========*/
+
+body{
+    font-family: var(--fonte-padrao);
+    background:
+    linear-gradient(
+    180deg,
+    #f5f7fa,#ffffff
+    );
+    color:#333;
+    overflow-x:hidden;
 }
 
 h2 {
@@ -81,10 +71,121 @@ h2 {
     font-size: 2em;
 }
 
-h3 {
-    font-size: 0.2em;   
-    color: #0073E6;  
-    text-align: justify;  
+h3{
+    margin-top:10px;
+    font-size:.9rem;
+    color:#333;
+    font-weight:600;
+    text-align:center;
+}
+
+main { 
+  
+}
+
+.hero{
+    height:40vh;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
+    ),
+    url("../imagens/banner.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-top:75px;
+}
+
+.hero-content h2{
+    color:white;
+    font-size:2.5rem;
+    margin-left:40px;
+}
+
+.hero-content p{
+    color:white;
+    font-size:1.3rem;
+}
+
+menu{
+    display:flex;
+    gap:12px;
+}
+
+menu img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    transition:.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+    
+}
+
+menu img:hover{
+    transform:translateY(-5px) scale(1.1);
+}
+
+nav{
+    position: fixed;
+    left: 15px;
+    top: 100px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    z-index:100;
+}
+
+nav img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    transition:.3s;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+
+nav img:hover{
+    transform:scale(1.1);
+}
+
+.img{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(140px,1fr));
+    gap:25px;
+    padding:30px;
+    max-width:1200px;
+    margin:auto;
+}
+/*===============IMAGENS BANDEIRAS===================*/
+
+.img > div{
+    background:white;
+    border-radius:18px;
+    padding:15px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
+}
+
+.img > div:hover{
+    transform:translateY(-10px);
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.15);
+}
+
+.img{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    max-width:1300px;
+    margin:auto;
+    padding:50px 30px;
 }
 
 div {
@@ -96,7 +197,8 @@ div {
 } 
 
 div.img {
-   /* background-color: red;*/
+   background-color: #2b2828;
+   margin-top: 0px;  
 }
 
 div > a > abbr > img {    
@@ -111,114 +213,120 @@ div > a abbr img:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);    
 }
 
-.ce {
-  width: 38px;
-  height: 30px;
-  border-radius: 20px; 
-  margin: 10px; 
-  padding: 10px;
+.estado-card{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    transition:.4s;
+    overflow:hidden;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
 }
 
-.sp {
-  width: 38px;
-  height: 30px;
-  border-radius: 20px; 
-  margin: 10px; 
-  padding: 10px;
+.estado-card:hover{
+    transform:
+    translateY(-10px)
+    scale(1.03);
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
 }
 
-.pr {
-  width: 38px;
-  height: 30px;
-  border-radius: 20px; 
-  margin: 10px; 
-  padding: 10px; 
+.estado-card img{
+    width:100%;
+    height:100px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.4s;
 }
 
-.rj {
-  width: 38px;
-  height: 30px;
-  border-radius: 20px; 
-  margin: 10px; 
-  padding: 10px;
+.estado-card:hover img{
+    transform:scale(1.08);
 }
 
-.rn {
-  width: 38px;
-  height: 30px;
-  border-radius: 20px; 
-  margin: 10px; 
-  padding: 10px;
-}
-
-.mg {
-  width: 38px;
-  height: 30px;
-  border-radius: 20px; 
-  margin: 10px; 
-  padding: 10px;
-}
-
-.br {
-  width: 38px;
-  height: 30px;
-  border-radius: 20px; 
-  margin: 10px; 
-  padding: 10px;
-}
-
-.pb {
-  width: 38px;
-  height: 30px;
-  border-radius: 20px; 
-  margin: 10px; 
-  padding: 10px;
-}
-
-.ms {
-  width: 38px;
-  height: 30px;
-  border-radius: 20px; 
-  margin: 10px; 
-  padding: 10px;
-}
-
-.rs {
-  width: 38px;
-  height: 30px;
-  border-radius: 20px; 
-  margin: 10px; 
-  padding: 10px;
-}
-
-.sc {
-  width: 38px;
-  height: 30px;
-  border-radius: 20px; 
-  margin: 10px; 
-  padding: 10px;
-}
-
-article.clicar {
-    background-image: linear-gradient(to left, var(--cor4), var(--cor2));
-    width: 98vw;
-    text-align: center;
-    text-shadow: 2px 1px 5px black;
-    color: rgb(196, 165, 165);
-    border-radius: 5px;
-    margin-top: 20px;
+article.clicar{
+    max-width:900px;
+    margin:20px auto;
+    padding:15px;
+    border-radius:12px;
+     background:rgba(15,23,42,.85);
+    color:white;
+    font-size:1.1rem;
+    text-align:center;
 }
 
 
 
-main { 
-    width: 100vw;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;    
-    padding: 0px;
-     
+/*==========Efeito cinematográfico nas seções de viagem==========*/
+
+section{
+    position:relative;
+    min-height:500px;
+    display:flex;
+    align-items:center;
 }
+
+/*==========Adicionar overlay escuro==========*/
+
+section::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.55)
+    );
+}
+
+/*==========Caixa de texto moderna==========*/
+
+section p{
+    max-width:550px;
+    padding:30px;
+    border-radius:24px;
+    background:
+    rgba(255,255,255,.12); backdrop-filter:blur(15px);
+    border: 1px solid rgba(255,255,255,.2);
+    box-shadow: 0 15px 40px rgba(0,0,0,.2);
+    font-size:1.05rem;
+    line-height:1.9;
+}
+
+/*==========Rodapé moderno==========*/
+
+footer{
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+footer::before{
+    content:"🌎";
+    display:block;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+/*==========Rodapé moderno==========*/
+
+
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/*==========FIM==========*/
 
 section#img {    
     background-image: url('../imagens/estrada.jpg');
@@ -251,8 +359,8 @@ section#img2 {
 p#img2 {
     background-color: rgba(0, 0, 0, 0.103);
     color: white;
-    width: 250px;
-    height: 150px;
+    width: 350px;
+    height: 380px;
     padding: 30px;
     margin-top: 30px;
     margin-left: 40px;
@@ -271,19 +379,10 @@ section.lago {
 p.lago {
     color: white;
     width: 250px;
-    height: 150px;
+    height: 280px;
     padding: 10px;
     margin-top: 30px;
     margin-left: 45px;   
 }
 
-footer {
-   /* background-image: linear-gradient(to left, var(--cor4), var(--cor2)); */
-    font-family: var(--fonte-destaque); 
-    text-align: center; 
-    color: rgb(196, 165, 165);
-    margin-top: 10px;
-    padding: 5px; 
-      
-}
 
