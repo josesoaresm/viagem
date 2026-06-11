@@ -77,37 +77,6 @@ main {
     width: 100vw;     
     height: 100%;    
     margin-top: 50px;
-    /*border: 1px dotted black; */  
-}
-
-div.direita {
-    background-color: #0073e64d;
-    background-image: url('../imagens/ceara-2-2003.jpg');
-    background-repeat: no-repeat;
-    background-position: right center; 
-    background-size: cover; 
-    width: 390px; 
-    height: 290px;
-    margin-left: 410px;
-    margin-top: -270px;
-    display: none;
-}
-div.texto {
-    background-color: #0073e6d3;
-    width: 350px;
-    height: 360px;
-    display: none;
-    padding: 20px;
-    margin-top: 10px;
-    margin-left: 410px;
-}
-
-iframe {
-    width: 380px;
-    height: 420px;
-    margin-left: 0px;        
-    margin-top: 10px; 
-    /* border: 1px dotted black; */    
 }
 
 p {
@@ -120,54 +89,25 @@ p {
     text-indent: 30px; 
 }
 
-article.leticia {  
+section {
     width: 100vw;
-    height: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center; /* para alinhar o item no centro*/
- }
-  
- article.leticia > img {
-     width: 350px;
-     margin-top: 10px;
-     margin-left: 0px;
-     box-shadow: 0px 0px 7px black;
- }
-
-article.barra {  
-    width: 100vw;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center; /* para alinhar o item no centro*/   
 }
- 
-article.barra > img {        
+
+section > img {
     width: 350px;
     margin-top: 10px;
     margin-left: 0px;
     box-shadow: 0px 0px 7px black;
-    text-align: center; 
 }
 
-article.mae {
-    width: 100vw;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center; /* para alinhar o item no centro*/
+ section > img:hover{
+   transform: scale(1.05); /* Aumenta a imagem em 5% */
+   transition: transform 0.3s; /* Animação suave para o aumento */
 }
 
-article.mae > img {
-    width: 160px;
-    margin-top: 10px;
-    margin-left: 0px;
-    box-shadow: 0px 0px 7px black;
-}
-
-article > img:hover{
-   transform: scale(1.5);
-}
-  
 footer {
     background-image: linear-gradient(to left, var(--cor4), var(--cor2));
     font-family: var(--fonte-destaque); 
@@ -175,5 +115,3 @@ footer {
     color: white;
     padding: 10px; 
 }
-
-
