@@ -325,6 +325,7 @@ footer{
 .mae > img {
     width: 130px;
     border-radius: 5%;
+    margin-left: 10px;
 }
 
 .mae > img:hover{
