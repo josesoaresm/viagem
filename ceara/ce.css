@@ -260,8 +260,8 @@ footer{
 .timeline-item::before{
     content:'';
     position:absolute;
-    width:22px;
-    height:22px;
+    width:10px;
+    height:10px;
     background:white;
     border:5px solid #2563eb;
     border-radius:50%;
