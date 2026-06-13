@@ -311,6 +311,26 @@ footer{
     transform:translateY(-5px);
 }
 
+/*==============================================PAIMAE===================================*/
+.paimae {
+    width:100%;
+    max-width:700px;
+    display:block;
+    margin:20px auto;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+    transition:.4s;
+}
+
+.mae > img {
+    width: 180px;
+    border-radius: 5%;
+}
+
+.mae > img:hover{
+    transform:scale(1.03);
+}    
+
 /* ===================================MOBILE====================================== */
 
 @media(max-width:768px){
