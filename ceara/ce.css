@@ -30,7 +30,7 @@ body{
     line-height:1.8;
 }
 
-/* HEADER */
+/*=================================== HEADER ============================= */
 
 header{
     position:fixed;
@@ -51,7 +51,7 @@ header h1{
     letter-spacing:3px;
 }
 
-/* MENU */
+/*===================================== MENU ==================================*/
 
 nav{
     position:fixed;
@@ -76,7 +76,7 @@ nav img:hover{
     box-shadow:0 10px 25px rgba(0,0,0,.25);
 }
 
-/* MAIN */
+/*======================================= MAIN =================================*/
 
 main{
     max-width:1200px;
@@ -84,12 +84,12 @@ main{
     padding:80px 10px 50px;
 }
 
-/* SECTIONS */
+/*======================================== SECTIONS =================================*/
 
 section{
     background:white;
     margin:40px 0;
-    padding:30px;
+    padding:10px;
     border-radius:var(--radius);
     box-shadow:var(--shadow);
     transition:.4s;
@@ -127,8 +127,8 @@ p{
     font-size:1rem;
 }
 
-/* IMAGENS */
-
+/*======================================= IMAGENS ==============================*/
+/*===================fECHADA
 section > img{
     width:100%;
     max-width:700px;
@@ -143,8 +143,8 @@ section > img:hover{
     transform:scale(1.03);
 }
 
-/* CARROSSEL */
-
+/*========================================== CARROSSEL ==================================*/
+/*===================fECHADA
 .container{
     width:100%;
     overflow:hidden;
@@ -176,7 +176,7 @@ section > img:hover{
 .carousel img:hover{
     transform:scale(1.04);
 }
-
+*/
 @keyframes scroll{
     from{
         transform:translateX(0);
@@ -186,7 +186,7 @@ section > img:hover{
     }
 }
 
-/* FOOTER */
+/*========================================= FOOTER ======================================*/
 
 footer{
     background:linear-gradient(
@@ -203,7 +203,7 @@ footer{
     font-size:1rem;
 }
 
-/* CONTAINER DA TIMELINE */
+/*=============================== CONTAINER DA TIMELINE ===================================*/
 
 .timeline{
     position:relative;
@@ -212,7 +212,7 @@ footer{
     padding:10px 0;
 }
 
-/* LINHA CENTRAL */
+/*================================ LINHA CENTRAL ==========================================*/
 
 .timeline::before{
     content:'';
@@ -234,7 +234,7 @@ footer{
     border-radius:10px;
 }
 
-/* ITEM */
+/*===================================== ITEM ===============================================*/
 
 .timeline-item{
     position:relative;
@@ -243,19 +243,19 @@ footer{
     margin-bottom:50px;
 }
 
-/* ÍMPARES */
+/*================================= ÍMPARES ===============================================*/
 
 .timeline-item:nth-child(odd){
     left:0;
 }
 
-/* PARES */
+/*================================= PARES =================================================*/
 
 .timeline-item:nth-child(even){
     left:50%;
 }
 
-/* BOLINHA */
+/* =======================================BOLINHA========================================= */
 
 .timeline-item::before{
     content:'';
@@ -274,7 +274,7 @@ footer{
     left:-14px;
 }
 
-/* ANO */
+/* ==============================================ANO====================================== */
 
 .timeline-year{
     position:absolute;
@@ -297,8 +297,8 @@ footer{
     left:-95px;
 }
 
-/* CARD */
-
+/* =============================================CARD====================================== */
+/*-----------------------------------fECHADO
 .timeline-content{
     background:white;
     padding:30px;
@@ -310,7 +310,7 @@ footer{
 .timeline-content:hover{
     transform:translateY(-5px);
 }
-
+*/
 /*==============================================PAIMAE===================================*/
 .paimae {
     width:100%;
@@ -323,16 +323,15 @@ footer{
 }
 
 .mae > img {
-    width: 130px;
+    width: 180px;
     border-radius: 5%;
-    margin-left: 10px;
 }
 
 .mae > img:hover{
     transform:scale(1.03);
 }    
 
-/* ===================================MOBILE====================================== */
+/* MOBILE */
 
 @media(max-width:768px){
 
@@ -375,12 +374,83 @@ footer{
     .timeline-year{
         left:60px !important;
         top:-15px;
-
         width:60px;
         height:60px;
     }
 
     .timeline-content{
-        margin-top:40px;
+        margin-top:20px;
     }
 }
+
+
+ /* Estrutura do Carrossel */
+        .carousel-wrapper {
+            position: relative;
+            width: 100%;
+            height: var(--carousel-height);
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .carousel-track {
+            display: flex;
+            width: 800%; /* 8 imagens = 800% */
+            height: 100%;
+            animation: slide 30s infinite ease-in-out;
+        }
+
+        .slide {
+            width: 12.5%; /* 100% / 8 imagens */
+            height: 100%;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+            display: block;
+        }
+
+        /* Legendas opcionais */
+        .caption {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Animação Automática */
+        /* Dividimos 100% pelos 8 estados de imagem */
+        @keyframes slide {
+            0%, 10% { transform: translateX(0); }
+            12.5%, 22.5% { transform: translateX(-12.5%); }
+            25%, 35% { transform: translateX(-25%); }
+            37.5%, 47.5% { transform: translateX(-37.5%); }
+            50%, 60% { transform: translateX(-50%); }
+            62.5%, 72.5% { transform: translateX(-62.5%); }
+            75%, 85% { transform: translateX(-75%); }
+            87.5%, 97.5% { transform: translateX(-87.5%); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Responsividade para Celular */
+        @media (max-width: 768px) {
+            .carousel-wrapper {
+                height: var(--mobile-height);
+            }
+            .container {
+                width: 95%;
+            }
+            .caption {
+                font-size: 0.8rem;
+                bottom: 10px;
+                left: 10px;
+            }
+        }
