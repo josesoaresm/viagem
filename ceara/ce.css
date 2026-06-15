@@ -265,7 +265,7 @@ footer{
     background:white;
     border:5px solid #2563eb;
     border-radius:50%;
-    top:40px;
+    top:0px;
     right:-14px;
     z-index:10;
 }
