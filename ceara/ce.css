@@ -328,8 +328,9 @@ img {
 }
 
 .mae > img {
-    width: 160px;
+    width: 120px;
     border-radius: 5%;
+    margin-left: 30px;
 }
 
 .mae > img:hover{
