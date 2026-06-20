@@ -47,8 +47,8 @@
             backdrop-filter: blur(5px);
         }
 
-        /* Animação Automática */
-        /* Dividimos 100% pelos 8 estados de imagem */
+        /* =========================Dividimos 100% pelos 8 estados de imagem =============*/
+
         @keyframes slide {
             0%, 10% { transform: translateX(0); }
             12.5%, 22.5% { transform: translateX(-12.5%); }
@@ -61,7 +61,8 @@
             100% { transform: translateX(0); }
         }
 
-        /* Responsividade para Celular */
+        /* =========================Responsividade para Celular ============================*/
+
         @media (max-width: 768px) {
             .carousel-wrapper {
                 height: var(--mobile-height);
@@ -76,7 +77,7 @@
             }
         }
 
-/*=====================FUNICULAR=========================*/
+/*=====================SLIDE CONTÍNUO=========================*/
 .container{
     width:90%;
     max-width:1000px;
@@ -97,6 +98,7 @@
     height:500px;
     object-fit:cover;
     flex-shrink:0;
+    border-radius: 20px;
 }
 
 @keyframes scroll{

@@ -36,7 +36,6 @@ body{
     overflow-x:hidden;
     text-align: justify;
     text-justify: inter-word;
-    
 }
 
 /* ================= HEADER ================= */
@@ -45,7 +44,6 @@ header{
     min-height:10vh;
     background: linear-gradient(rgba(15,23,42,.75),rgba(15,23,42,.7)),
     url('imagens/ibira.JPG') center center / cover no-repeat;
-
     display:flex;
     align-items:center;
     justify-content:center;
