@@ -226,8 +226,8 @@ h3{
 }
 
 .slide img {
-  width: 35%;
-  height: 450px;
+  width: 25%;
+  height: 400px;
   object-fit: cover;
   display: block;
 }
