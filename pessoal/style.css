@@ -41,11 +41,8 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-
     backdrop-filter:blur(10px);
-
     background:rgba(15,23,42,.85);
-
     box-shadow:var(--sombra);
 }
 
@@ -62,13 +59,10 @@ header h1{
 #burguer{
     display:block;
     text-align:center;
-
     background:var(--cor4);
     color:white;
-
     padding:12px;
     cursor:pointer;
-
     transition:.3s;
 }
 
@@ -88,13 +82,9 @@ nave a{
     display:flex;
     justify-content:center;
     align-items:center;
-
     padding:12px;
-
     background:var(--cor2);
-
     border-bottom:1px solid rgba(255,255,255,.08);
-
     transition:.3s;
 }
 
@@ -196,9 +186,7 @@ h3{
 .arvore img{
     width:100%;
     max-width:900px;
-
     border-radius:15px;
-
     box-shadow:var(--sombra);
 }
 
