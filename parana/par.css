@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+
+    --primary:#0f766e;
+    --secondary:#14b8a6;
+    --accent:#f59e0b;
+    --dark:#0f172a;
+    --light:#f8fafc;
+    --shadow:0 15px 35px rgba(0,0,0,.12);
+    --radius:24px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#e2e8f0;
+    color:#334155;
+}
+
+/* ========================= HEADER ==========================*/
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    backdrop-filter:blur(15px);
+    background:rgba(15,23,42,.9);
+    padding:15px;
+    box-shadow:0 4px 20px rgba(0,0,0,.2);
+}
+
+header h1{
+
+    color:white;
+    text-align:center;
+    letter-spacing:4px;
+    font-size:2rem;
+}
+
+/* ======================== MENU ===============================*/
+
+nav{
+    position: fixed;
+    left: 15px;
+    top: 100px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    z-index:100;
+}
+
+nav img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    transition:.3s;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+
+nav img:hover{
+    transform:scale(1.1);
+}
+
+/* ========================= CONTEÚDO ================================*/
+
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:120px 20px 50px;
+}
+
+/* ========================= TIMELINE ================================*/
+
+.timeline{
+    position:relative;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    width:5px;
+    background:linear-gradient(
+        to bottom,
+        var(--primary),
+        var(--secondary)
+    );
+}
+
+/* ========================== CARDS ===================================*/
+
+.travel-card{
+    position:relative;
+    width:45%;
+    background:white;
+    margin-bottom:60px;
+    padding:30px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    transition:.4s;
+}
+
+.travel-card:hover{
+    transform:translateY(-6px);
+}
+
+.travel-card:nth-child(odd){
+    margin-right:auto;
+}
+
+.travel-card:nth-child(even){
+    margin-left:auto;
+}
+
+/* =============================BOLINHA ================================*/
+
+.travel-card::before{
+    content:"";
+    position:absolute;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:white;
+    border:5px solid var(--secondary);
+    top:40px;
+}
+
+.travel-card:nth-child(odd)::before{
+    right:-58px;
+}
+
+.travel-card:nth-child(even)::before{
+    left:-58px;
+}
+
+/* =============================== ANO ================================*/
+
+.year{
+    position:absolute;
+    top:-18px;
+    right:20px;
+    background:var(--accent);
+    color:white;
+    padding:8px 15px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* =========================== TÍTULOS ==============================*/
+
+h2{
+    color:var(--primary);
+    margin-bottom:20px;
+    font-size:1.8rem;
+}
+
+/* =========================== IMAGENS ==============================*/
+
+.travel-card img{
+    width:100%;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    transition:.4s;
+    margin-bottom:20px;
+}
+
+.travel-card img:hover{
+    transform:scale(1.03);
+}
+
+/* ======================== PARÁGRAFOS ================================*/
+
+p{
+    text-align:justify;
+    line-height:1.8;
+}
+
+/* ============================ VÍDEO =================================*/
+
+.video{
+    margin-top:30px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.video iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+}
+
+/* =========================== FOOTER ====================================*/
+
+footer{
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+footer::before{
+    content:"🌎";
+    display:block;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+/* ============================ MOBILE =====================================*/
+
+@media(max-width:900px){
+
+    .timeline::before{
+        left:25px;
+    }
+
+    .travel-card{
+        width:100%;
+        margin-left:0 !important;
+        padding:25px;
+        padding-left:70px;
+    }
+
+    .travel-card::before{
+        left:14px !important;
+        right:auto;
+    }
+
+    header h1{
+        font-size:1.6rem;
+    }
+}
