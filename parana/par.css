@@ -80,6 +80,7 @@ main{
     max-width:1200px;
     margin:auto;
     padding:120px 20px 50px;
+    margin-left: 0px;    
 }
 
 /* ========================= TIMELINE ================================*/
@@ -108,8 +109,8 @@ main{
     position:relative;
     width:45%;
     background:white;
-    margin-bottom:60px;
-    padding:30px;
+    margin-bottom:20px;    
+    padding: 35px;px;
     border-radius:var(--radius);
     box-shadow:var(--shadow);
     transition:.4s;
