@@ -80,7 +80,9 @@ main{
     max-width:1200px;
     margin:auto;
     padding:120px 20px 50px;
-    margin-left: 0px;    
+    margin-left: -10px;
+    margin-right: -10px;
+    
 }
 
 /* ========================= TIMELINE ================================*/
@@ -170,6 +172,22 @@ h2{
     font-size:1.8rem;
 }
 
+h3 {
+    font-size: var(--accent);
+    font-size:1rem;
+    color: #e0ac37;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0f766e;
+    text-align: center;
+    margin: 15px;
+}
+
+
 /* =========================== IMAGENS ==============================*/
 
 .travel-card img{
@@ -189,6 +207,45 @@ h2{
 p{
     text-align:justify;
     line-height:1.8;
+}
+
+/* ============================ H3 =================================*/
+h3 {
+    font-size: var(--accent);
+    font-size:1rem;
+    color: #e0ac37;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0f766e;
+    text-align: center;
+    margin: 15px;
+}
+
+/* ============================ LISTA =================================*/
+
+.lista-check {
+    list-style: none; /* Remove a bolinha */
+    padding-left: 0;
+}
+
+.lista-check li {
+    position: relative;
+    padding-left: 30px;
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.lista-check li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 /* ============================ VÍDEO =================================*/
