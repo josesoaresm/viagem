@@ -208,6 +208,13 @@ p{
     line-height:1.8;
 }
 
+a.externo::after {
+   /* content: " (abre em nova aba)";*/
+   /*content: '\00A0\1F517';*/
+    font-size: 0.9rem;
+    color: #0f766e;    
+}
+
 /* ============================ LISTA =================================*/
 
 .lista-check {
