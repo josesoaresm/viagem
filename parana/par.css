@@ -187,7 +187,6 @@ h4 {
     margin: 15px;
 }
 
-
 /* =========================== IMAGENS ==============================*/
 
 .travel-card img{
@@ -195,7 +194,7 @@ h4 {
     border-radius:18px;
     box-shadow:var(--shadow);
     transition:.4s;
-    margin-bottom:20px;
+    margin-top: 15px;
 }
 
 .travel-card img:hover{
@@ -209,22 +208,6 @@ p{
     line-height:1.8;
 }
 
-/* ============================ H3 =================================*/
-h3 {
-    font-size: var(--accent);
-    font-size:1rem;
-    color: #e0ac37;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-h4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #0f766e;
-    text-align: center;
-    margin: 15px;
-}
-
 /* ============================ LISTA =================================*/
 
 .lista-check {
@@ -236,7 +219,7 @@ h4 {
     position: relative;
     padding-left: 30px;
     margin: 8px 0;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .lista-check li::before {
