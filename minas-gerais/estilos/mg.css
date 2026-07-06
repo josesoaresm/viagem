@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --cor-primaria: #0073E6;
+            --cor-escura: #003C47;
+            --cor-texto: #333333;
+            --cor-texto-suave: #4a5568;
+            --cor-borda: #e2e8f0;
+            --fonte-padrao: 'Poppins', Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--fonte-padrao);
+            background-color: #f7fafc;
+            color: var(--cor-texto);
+            line-height: 1.6;
+            padding-top: 90px; /* Garante que o header fixo não cubra o início */
+        }
+
+        /* Header Moderno Unificado (Glassmorphism) */
+        header {     
+            background: rgba(0, 60, 71, 0.88); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            z-index: 1000;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            color: #ffffff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        /* Menu de Navegação */
+        nav {   
+            display: flex;
+            gap: 15px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            display: inline-flex;
+        }
+
+        nav > a img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        nav > a img:hover {
+            border-color: var(--cor-primaria);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 115, 230, 0.4);
+        }
+
+        /* Bloco Central de Conteúdo */
+        main {   
+            background-color: #ffffff;
+            max-width: 850px;
+            margin: 20px auto;    
+            border-radius: 16px;  
+            box-shadow: 0 4px 25px rgba(0,0,0,0.05);
+            overflow: hidden;
+            padding-bottom: 40px;
+        }
+
+        /* Banner de Entrada (Faixa) */
+        .faixa img {
+            width: 100%;
+            height: 233px;
+            object-fit: ;
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--cor-primaria);
+            margin: 35px 30px 15px 30px;
+            font-weight: 600;
+            border-left: 4px solid var(--cor-primaria);
+            padding-left: 12px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: var(--cor-texto-suave);
+            margin: 0 30px 20px 30px;
+            text-align: justify;
+        }
+
+        p a {
+            color: var(--cor-primaria);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+
+        p a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        /* Seção Capitólio e Bloco de Fotos (Grids organizados) */
+        .capitolio-galeria, .fotos-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            padding: 0 30px;
+            margin-bottom: 30px;
+        }
+
+        .capitolio-galeria img, .fotos-galeria img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease;
+        }
+
+        .capitolio-galeria img:hover, .fotos-galeria img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+        }
+
+        /* CARROSSEL HORIZONTAL ESTILO REELS (Poços de Caldas) */
+        .reels-container {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 10px 30px 25px 30px;
+            scroll-behavior: smooth;
+            snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .reel {
+            flex: 0 0 170px; /* Largura fixa das fotos no carrossel */
+            snap-align: start;
+        }
+
+        .reel img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 14px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .reel img:hover {
+            transform: scale(1.04);
+        }
+
+        /* Estilização elegante da barra de rolagem do carrossel */
+        .reels-container::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .reels-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+            margin: 0 30px;
+        }
+
+        .reels-container::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+
+        .reels-container::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        /*===============carrossel===============*/
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+}
+
+/* Estrutura do Carrossel */
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: var(--carousel-height);
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.carousel-track {
+    display: flex;
+    width: 1200%; /* 12 imagens = 1200% */
+    height: 100%;
+    animation: slide 60s infinite ease-in-out;
+}
+
+.slide {
+    width: 8.3333%; /* 100% / 12 imagens */
+    height: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    display: block;
+}
+
+/* Legendas opcionais */
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+}
+
+/* Animação Automática para 12 imagens */
+@keyframes slide {
+
+    0%, 6% {
+        transform: translateX(0);
+    }
+
+    8.33%, 14.33% {
+        transform: translateX(-8.3333%);
+    }
+
+    16.66%, 22.66% {
+        transform: translateX(-16.6666%);
+    }
+
+    25%, 31% {
+        transform: translateX(-25%);
+    }
+
+    33.33%, 39.33% {
+        transform: translateX(-33.3333%);
+    }
+
+    41.66%, 47.66% {
+        transform: translateX(-41.6666%);
+    }
+
+    50%, 56% {
+        transform: translateX(-50%);
+    }
+
+    58.33%, 64.33% {
+        transform: translateX(-58.3333%);
+    }
+
+    66.66%, 72.66% {
+        transform: translateX(-66.6666%);
+    }
+
+    75%, 81% {
+        transform: translateX(-75%);
+    }
+
+    83.33%, 89.33% {
+        transform: translateX(-83.3333%);
+    }
+
+    91.66%, 97.66% {
+        transform: translateX(-91.6666%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+
+    .carousel-wrapper {
+        height: var(--mobile-height);
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .caption {
+        font-size: 0.8rem;
+        bottom: 10px;
+        left: 10px;
+    }
+}
+    /*=================FIM CARROSSEL==================*/
+
+        /* Rodapé Clean */
+         footer{
+            background:#0f172a;
+            color:white;
+            padding:20px;
+            text-align:center;
+}
+
+        footer::before{
+            content:"🌎";
+            display:block;
+            font-size:2rem;
+            margin-bottom:10px;
+}
