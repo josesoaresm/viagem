@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --cor-primaria: #0073E6;
+            --cor-escura: #003C47;
+            --cor-texto: #333333;
+            --cor-texto-suave: #555555;
+            --cor-borda: #e2e8f0;
+            --fonte-padrao: 'Poppins', Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--fonte-padrao);
+            background: #f0f4f8 url(../imagens/mgs.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: var(--cor-texto);
+            line-height: 1.6;
+            padding-top: 90px; /* Garante que o header fixo não cubra o início */
+        }
+
+        /* Header Moderno Unificado (Glassmorphism) */
+        header {     
+            background: rgba(255, 255, 255, 0.85); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            z-index: 1000;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            color: var(--cor-escura);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        /* Menu de Navegação */
+        nav {   
+            display: flex;
+            gap: 15px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            display: inline-flex;
+        }
+
+        nav > a img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        nav > a img:hover {
+            border-color: var(--cor-primaria);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 115, 230, 0.3);
+        }
+
+        /* Bloco Central de Conteúdo */
+        main {
+            background-color: rgba(255, 255, 255, 0.96);
+            max-width: 1000px;
+            margin: 20px auto;    
+            border-radius: 16px;  
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            overflow: hidden;
+            padding-bottom: 40px;
+        }
+
+        /* Faixa do Topo */
+        .topo img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Texto Introdutório */
+        main > p {
+            font-size: 1.05rem;
+            color: var(--cor-texto-suave);
+            margin: 35px 35px 25px 35px;
+            text-align: justify;
+        }
+
+        /* Grid de Fotos Atualizado para Cards Modernos */
+        .grid-matogrosso {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 0 35px;
+            margin-bottom: 40px;
+        }
+
+        .grid-matogrosso > section {
+            background: #ffffff;
+            border: 1px solid var(--cor-borda);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .grid-matogrosso > section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .grid-matogrosso img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .grid-matogrosso p {
+            font-size: 0.9rem;
+            color: var(--cor-texto-suave);
+            padding: 15px;
+            margin: 0;
+            text-align: justify;
+            flex-grow: 1;
+        }
+
+        /* Seção de Vídeos Inteligente (Grid) */
+        div.video {
+            background-color: #f8fafc;
+            border-top: 1px solid var(--cor-borda);
+            border-bottom: 1px solid var(--cor-borda);
+            padding: 40px 35px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+
+        /* Torna os iframes do YouTube fluidos e proporcionais */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 real */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        div.video .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Rodapé Clean */
+        footer{
+            background:#0f172a;
+            color:white;
+            padding:20px;
+            text-align:center;
+}
+
+        footer::before{
+            content:"🌎";
+            display:block;
+            font-size:2rem;
+            margin-bottom:10px;
+}
+
+        /* Adaptações para Telas de Celular */
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                height: auto;
+                padding: 15px;
+            }
+            body {
+                padding-top: 130px;
+            }
+            main > p, .grid-matogrosso {
+                padding: 0 15px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            div.video {
+                grid-template-columns: 1fr;
+                padding: 20px 15px;
+            }
+            .topo img {
+                height: 150px;
+            }
+        }
