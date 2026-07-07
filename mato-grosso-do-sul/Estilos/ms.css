@@ -137,9 +137,9 @@ div.teresinha {
     text-align: center;
     color: var(--cor-texto);
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     height: auto;
-    margin: 20px auto;
+   margin-left: -20px;
     padding: 20px;
     border-radius: 14px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
