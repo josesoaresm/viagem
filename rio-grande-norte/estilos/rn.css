@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --cor-primaria: #0073E6;
+            --cor-escura: #003C47;
+            --cor-areia: #fdfaf2;
+            --cor-texto: #333333;
+            --cor-link: #997708;
+            --cor-borda: #e2e8f0;
+            --fonte-padrao: 'Poppins', Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: #f7fafc;
+    color: var(--cor-texto);
+    line-height: 1.6;
+    padding-top: 90px; /* Ajustado para a nova altura do header unificado */
+}
+
+/* Header Unificado e Moderno (Glassmorphism) */
+header {     
+    background: rgba(0, 60, 71, 0.85); /* Mistura da var(--cor-escura) com transparência */
+    backdrop-filter: blur(12px); /* Efeito de vidro desfocado */
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separa o título dos botões */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: none; /* Removido shadow antigo para um visual mais limpo */
+    margin: 0;
+}
+
+/* Nav Simplificada dentro do Flexbox */
+nav {   
+    position: static; /* Sai do posicionamento fixo individual */
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    width: auto;
+}
+
+nav > a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+nav > a img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    object-fit: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Efeito de flutuar e brilhar ao passar o mouse */
+nav > a img:hover {
+    border-color: var(--cor-primaria);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 115, 230, 0.4);
+}
+
+/* Ajuste para telas menores (Responsividade) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        height: auto;
+        padding: 12px;
+    }
+
+        /* Bloco Principal */
+        main {     
+            max-width: 800px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 0 0 30px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        /* Banner de Entrada */
+        .faixa img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+        }
+
+        h2 {
+            color: var(--cor-primaria);
+            font-size: 1.4rem;
+            text-align: center;
+            margin: 30px 20px 15px 20px;
+            font-weight: 600;
+        }
+
+        p {
+            text-align: justify;
+            margin: 0 25px 20px 25px;
+            font-size: 1rem;
+            color: #4a5568;
+        }
+
+        p a {
+            color: var(--cor-link);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px dashed var(--cor-link);
+            transition: color 0.2s;
+        }
+
+        p a:hover {
+            color: var(--cor-primaria);
+            border-bottom-color: var(--cor-primaria);
+        }
+
+        /* Layout das Seções de Fotos (Mãe Luiza & Buggy) */
+        .natal, .buggy {    
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 25px;
+            align-items: center;
+        }
+
+        /* Cards de Imagem Modernos */
+        .natal2, .buggy1, .dunas {
+            background: #ffffff;
+            border: 1px solid var(--cor-borda);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .natal2:hover, .buggy1:hover, .dunas:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+        }
+
+        .natal2 img, .buggy1 img, .dunas img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        h3 {
+            color: var(--cor-escura);
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 12px;
+            font-weight: 600;
+            background-color: #ffffff;
+        }
+
+        /* Ajuste do parágrafo específico dentro do grid de Natal */
+        .natal p {
+            margin: 0;
+        }
+
+        /* Rodapé */
+       footer{
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+footer::before{
+    content:"🌎";
+    display:block;
+    font-size:2rem;
+    margin-bottom:10px;
+}
