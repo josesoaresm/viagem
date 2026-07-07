@@ -116,7 +116,7 @@ p {
 main {
     background-color: rgba(255, 255, 255, 0.96);
     max-width: 1000px;
-    margin: 20px auto;    
+    margin: -20px auto;    
     border-radius: 16px;  
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     overflow: hidden;
@@ -280,10 +280,11 @@ article a:hover {
 div.video { 
     background-color: #ce0610;  
     margin-left: 18px;
+    margin-bottom: 20px;
     width: 315px;
     height: 1450px;
     padding: 0px;
-    padding-bottom: 59%;
+    padding-bottom: 79%;
     position: relative;
     border-radius: 10px;
 }
