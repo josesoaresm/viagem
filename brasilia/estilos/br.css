@@ -89,7 +89,7 @@
 
         /* Seção do Relato Histórico */
         .relato-inicial {
-            margin-bottom: 40px;
+            margin-bottom: 5px;
             background-color: #f8fafc;
             padding: 25px;
             border-radius: 12px;
@@ -171,7 +171,7 @@
         footer{
             background:#0f172a;
             color:white;
-            padding:20px;
+            padding:10px;
             text-align:center;
         }
 
@@ -179,7 +179,7 @@
             content:"🌎";
             display:block;
             font-size:2rem;
-            margin-bottom:10px;
+            margin-bottom:0px;
         }
 
         /* Ajustes e Otimizações Mobile */
