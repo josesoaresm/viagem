@@ -144,7 +144,8 @@
 
         .img-group img {
             flex: 1 1 280px; /* Distribui as fotos igualmente */
-            height: 420px;
+            width: 350px;
+            height: 300px;
             object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
