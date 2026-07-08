@@ -137,7 +137,7 @@ div.teresinha {
     text-align: center;
     color: var(--cor-texto);
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
    margin-left: 0px;
     padding: 20px;
@@ -147,7 +147,7 @@ div.teresinha {
 
 div.teresinha img {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     height: 250px;
     object-fit: 20px;
     border-radius: 10px;
