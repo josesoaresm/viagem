@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --cor-primaria: #0073E6;
+            --cor-escura: #003C47;
+            --cor-texto: #333333;
+            --cor-texto-suave: #4a5568;
+            --cor-borda: #e2e8f0;
+            --fonte-padrao: 'Poppins', Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--fonte-padrao);
+            background-color: #f7fafc;
+            color: var(--cor-texto);
+            line-height: 1.6;
+            padding-top: 90px; /* Impede que o header fixo cubra o início do conteúdo */
+        }
+
+        /* Header Moderno Unificado (Glassmorphism) */
+        header {     
+            background: rgba(0, 60, 71, 0.88); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            z-index: 1000;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            color: #ffffff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        /* Menu de Navegação no Header */
+        nav {   
+            display: flex;
+            gap: 15px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            display: inline-flex;
+        }
+
+        nav > a img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        nav > a img:hover {
+            border-color: var(--cor-primaria);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 115, 230, 0.4);
+        }
+
+        /* Bloco Central de Conteúdo */
+        main {   
+            background-color: #ffffff;
+            max-width: 850px;
+            margin: 20px auto;    
+            border-radius: 16px;  
+            box-shadow: 0 4px 25px rgba(0,0,0,0.04);
+            overflow: hidden;
+            padding-bottom: 40px;
+        }
+
+        /* Banner de Entrada (Faixa) */
+        .faixa img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Texto do Relato Principal */
+        article p {
+            font-size: 1.05rem;
+            color: var(--cor-texto-suave);
+            margin: 35px 35px 20px 35px;
+            text-align: justify;
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid var(--cor-primaria);
+        }
+
+        /* Estilização dos Títulos dos Passeios */
+        h3 {
+            font-size: 1.4rem;
+            color: var(--cor-escura);
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-align: left;
+            border-bottom: 2px solid var(--cor-borda);
+            padding-bottom: 8px;
+        }
+
+        /* Cards Organizadores de Conteúdo */
+        .catam, .fort {
+            background-color: #ffffff;
+            border: 1px solid var(--cor-borda);
+            border-radius: 14px;
+            margin: 30px 35px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+            transition: transform 0.3s ease;
+        }
+
+        .catam:hover, .fort:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+        }
+
+        /* Grupo de Imagens Lado a Lado */
+        .img-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .img-group img {
+            flex: 1 1 280px; /* Distribui as fotos igualmente */
+            height: 420px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .img-group img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Parágrafos internos dos Cards */
+        .catam p, .fort p {
+            font-size: 0.95rem;
+            color: var(--cor-texto-suave);
+            text-align: justify;
+        }
+
+        /* Links de Saiba Mais */
+        .fort p a {
+            color: var(--cor-primaria);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            margin-left: 4px;
+        }
+
+        .fort p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Rodapé Clean */
+       footer{
+            background:#0f172a;
+            color:white;
+            padding:20px;
+            text-align:center;
+    }
+
+        footer::before{
+            content:"🌎";
+            display:block;
+            font-size:2rem;
+            margin-bottom:10px;
+    }
+
+        /* Ajustes e Otimizações Responsivas */
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                justify-content: center;
+                gap: 8px;
+                height: auto;
+                padding: 12px;
+            }
+            body {
+                padding-top: 130px;
+            }
+            main {
+                margin: 10px;
+                border-radius: 12px;
+            }
+            article p, .catam, .fort {
+                margin-left: 15px;
+                margin-right: 15px;
+                padding: 15px;
+            }
+            .img-group img {
+                height: 380px;
+            }
+            .faixa img {
+                height: 150px;
+            }
+        }

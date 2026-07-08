@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Great+Vibes&display=swap');
+
+@font-face {
+    font-family: 'Feeling Lovely';
+    src: url('../fontes/Feeling\ Lovely.ttf');
+}
+
+:root {
+    --cor0:#12C197;
+    --cor1:#997708;
+    --cor2:#0073E6;
+    --cor3:#c4a5a5;
+    --cor4:#003C47;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "BurgeeSpice", sans-serif; 
+    --fonte-feeling: 'Feeling' cursiva;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     /*Incluir a borda no calculo do tamanho*/
+}
+
+body {
+    background: black url(../imagens/mgs.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100nh;
+    width: 100vw;
+}
+
+header{
+    min-height:10vh;
+    background: linear-gradient(rgba(15,23,42,.75),rgba(15,23,42,.7)),   
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px 10px;
+    position:relative;
+}
+
+.hero{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:clamp(1.8rem,4vw,6rem);
+    color:white;
+    font-weight:700;
+    letter-spacing:3px;
+    margin-bottom:20px;
+    text-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+.hero p{
+    color:#e2e8f0;
+    font-size:1.1rem;
+    line-height:1.8;
+    max-width:700px;
+    margin: ;
+}
+
+/* ================= NAV ================= */
+
+nav{
+    position:fixed;
+    top:60px;
+    right:10px;
+    z-index:999;
+    display:flex;
+    gap:5px;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,.2);
+    padding:8px 8px;
+    border-radius:50px;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+nav a img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+    transition:.3s;
+    border:2px solid transparent;
+}
+
+nav a img:hover{
+    transform:translateY(-4px) scale(1.08);
+    border-color:white;
+}
+
+h1 {
+   font-family: var(--fonte-padrao);   
+    font-size: 1.5em;
+    color: var(--cor3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247); 
+    margin-top: 0px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    line-height: 1em;
+    text-align: left;
+}
+
+
+p {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    color: var(--cor4);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+
+main {
+    background-color: #ffffff;
+            max-width: 850px;
+            margin: 20px auto;    
+            border-radius: 16px;  
+            box-shadow: 0 4px 25px rgba(0,0,0,0.04);
+            overflow: hidden;
+            padding-bottom: 40px;
+            padding-top: 10px;
+}
+
+.grid-scatarina {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0px;
+  }
+
+.grid-scatarina img {
+   width: 95%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    margin-left: 10px;
+  }
+  
+  .grid-scatarina img:hover {
+    transform: scale(1.05);
+  }
+
+  div.video {
+   
+    margin: 0px -20px 30px 15px;
+    width: 355px;
+    height: 3570px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+  /* position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%; */
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+footer::before{
+    content:"🌎";
+    display:block;
+    font-size:2rem;
+    margin-bottom:10px;
+}
