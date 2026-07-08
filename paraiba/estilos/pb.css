@@ -212,7 +212,8 @@
                 padding: 15px;
             }
             .img-group img {
-                height: 380px;
+                width: 350px;
+                height: 300px;
             }
             .faixa img {
                 height: 150px;
