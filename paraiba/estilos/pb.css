@@ -88,11 +88,17 @@
         }
 
         /* Banner de Entrada (Faixa) */
+        .faixa {
+            display: flex;
+            flex-wrap: wrap;         /* permite quebrar linha */
+            justify-content: center; /* centraliza os itens */
+            padding: 0px;
+        }
+
         .faixa img {
             width: 100%;
-            height: 150px;
-            object-fit: cover;
-            display: block;
+            height: 240px;
+            margin-top: -1px;
         }
 
         /* Texto do Relato Principal */
