@@ -1,0 +1,410 @@
+@charset "UTF-8";
+
+/* Importa uma fonte moderna e profissional diretamente do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Paleta de Cores Moderna (Sofisticada e Confortável) */
+  --bg-color: #f8fafc;
+  --card-bg: #ffffff;
+  --primary-color: #0066cc; /* Azul profissional */
+  --primary-gradient: linear-gradient(135deg, #0f172a, #1e3a8a); /* Slate/Navy moderno */
+  --accent-color: #b45309; /* Âmbar elegante para datas e destaques */
+  --text-dark: #1e293b; /* Preto suave para títulos */
+  --text-muted: #475569; /* Cinza legível para parágrafos */
+  --border-color: #e2e8f0;
+  
+  --font-padrao: 'Inter', system-ui, -apple-system, sans-serif;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Reset básico e fluxo moderno */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-padrao);
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Header Fixo e Elegante */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navegação Discreta e Profissional */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-item img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  object-fit: cover;
+}
+
+.nav-item:hover img {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Main Container principal */
+main {
+  margin-top: 100px;
+  padding: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cabeçalhos de Seções */
+.section-title-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title-container h2 {
+  font-size: 2.2rem;
+  color: var(--text-dark);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.section-title-container .subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* Grid Álbum Moderno */
+.grid-album {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+/* Card Padrão do Álbum */
+.card {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(0, 102, 204, 0.2);
+}
+
+.card-img-wrapper {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+  background-color: #f1f5f9;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-wrapper img {
+  transform: scale(1.06);
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-date {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Seção Histórica (Baú) */
+.secao-historica {
+  margin-top: 80px;
+  padding: 40px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.grid-historico {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+}
+
+/* Card Split (Para exibir duas imagens lado a lado) */
+.card-split {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.card-split:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.split-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 240px;
+  gap: 2px;
+  background-color: var(--border-color);
+}
+
+.split-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Seção Parques Estilizada */
+.parques-section {
+  margin-top: 80px;
+  padding: 60px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.parques-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.parque-card {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.parque-header h3 {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: left;
+  border-left: 4px solid var(--primary-color);
+  padding-left: 12px;
+}
+
+.parque-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.parque-images img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease;
+}
+
+.parque-images img:hover {
+  transform: scale(1.02);
+}
+
+.parque-card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* Carrossel de Recordações Autoplay */
+.carousel-section {
+  margin-top: 80px;
+  padding: 60px 0 20px 0;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+}
+
+.carousel-track {
+  display: flex;
+  width: 800%; /* 8 slides = 800% */
+  height: 100%;
+  animation: slide-show 35s infinite ease-in-out;
+}
+
+.slide {
+  width: 12.5%; /* 100% / 8 */
+  height: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Legenda flutuante translúcida moderna (Glassmorphism) */
+.caption {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-md);
+}
+
+/* Animação suave para as 8 imagens */
+@keyframes slide-show {
+  0%, 10% { transform: translateX(0); }
+  12.5%, 22.5% { transform: translateX(-12.5%); }
+  25%, 35% { transform: translateX(-25%); }
+  37.5%, 47.5% { transform: translateX(-37.5%); }
+  50%, 60% { transform: translateX(-50%); }
+  62.5%, 72.5% { transform: translateX(-62.5%); }
+  75%, 85% { transform: translateX(-75%); }
+  87.5%, 97.5% { transform: translateX(-87.5%); }
+  100% { transform: translateX(0); }
+}
+
+/* Rodapé */
+footer {
+  margin-top: 80px;
+  padding: 40px 20px;
+  background: var(--primary-gradient);
+  color: #94a3b8;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- Media Queries integradas para Responsividade Total --- */
+@media (max-width: 768px) {
+  main {
+    margin-top: 80px;
+    padding: 15px;
+  }
+  
+  .section-title-container h2 {
+    font-size: 1.8rem;
+  }
+  
+  .grid-album {
+    grid-template-columns: 1fr; /* Um card por linha no celular */
+    gap: 20px;
+  }
+  
+  .grid-historico {
+    grid-template-columns: 1fr;
+  }
+  
+  .split-images {
+    height: 180px;
+  }
+
+  .parque-images {
+    grid-template-columns: 1fr; /* Imagens empilham no celular */
+    gap: 12px;
+  }
+  
+  .parque-images img {
+    height: 200px;
+  }
+  
+  .carousel-wrapper {
+    height: 300px; /* Reduz altura do carrossel em celulares */
+  }
+  
+  .caption {
+    font-size: 0.85rem;
+    bottom: 15px;
+    left: 15px;
+    padding: 8px 16px;
+  }
+}
