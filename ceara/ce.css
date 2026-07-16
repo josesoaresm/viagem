@@ -127,56 +127,7 @@ p{
     font-size:1rem;
 }
 
-/*======================================= IMAGENS ==============================*/
-/*===================fECHADA
-section > img{
-    width:100%;
-    max-width:700px;
-    display:block;
-    margin:20px auto;
-    border-radius:15px;
-    box-shadow:var(--shadow);
-    transition:.4s;
-}
 
-section > img:hover{
-    transform:scale(1.03);
-}
-
-/*========================================== CARROSSEL ==================================*/
-/*===================fECHADA
-.container{
-    width:100%;
-    overflow:hidden;
-    border-radius:20px;
-    margin-top:25px;
-    box-shadow:var(--shadow);
-}
-
-.carousel{
-    display:flex;
-    width:calc(100% * 8);
-    animation:scroll 25s linear infinite;
-}
-
-.carousel:hover{
-    animation-play-state:paused;
-}
-
-.carousel img{
-    width:calc(100% / 8);
-    height:500px;
-    object-fit:cover;
-    flex-shrink:0;
-    padding:5px;
-    border-radius:20px;
-    transition:.4s;
-}
-
-.carousel img:hover{
-    transform:scale(1.04);
-}
-*/
 @keyframes scroll{
     from{
         transform:translateX(0);
@@ -189,18 +140,12 @@ section > img:hover{
 /*========================================= FOOTER ======================================*/
 
 footer{
-    background:linear-gradient(
-        135deg,
-        var(--dark),
-        var(--primary)
-    );
-
-    color:white;
+    background:#0f172a;
+    color:#cbd5e1;
     text-align:center;
-    padding:30px;
-    margin-top:50px;
-
-    font-size:1rem;
+    padding:20px 10px;
+    margin-top:10px;
+    font-size:.75rem;
 }
 
 /*=============================== CONTAINER DA TIMELINE ===================================*/
@@ -297,21 +242,7 @@ footer{
     left:-95px;
 }
 
-/* =============================================CARD====================================== */
-/*-----------------------------------fECHADO
-.timeline-content{
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
-    transition:.3s;
-}
 
-.timeline-content:hover{
-    transform:translateY(-5px);
-}
-*/
-/*==============================================PAIMAE===================================*/
 
 img {
    width: 320px;
@@ -337,7 +268,7 @@ img {
     transform:scale(1.03);
 }    
 
-/* MOBILE */
+/* ================================MOBILE============================== */
 
 @media(max-width:768px){
 
