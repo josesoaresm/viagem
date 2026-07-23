@@ -66,7 +66,11 @@ h1 {
 h3{
     margin-top:10px;
     font-size:.9rem;
-    color:#eeebeb;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
+    ),
     font-weight:600;
     text-align:center;
     margin-left:40px;
@@ -152,7 +156,7 @@ nav img:hover{
 /*===============IMAGENS BANDEIRAS===================*/
 
 .img > div{
-    background:rgba(255, 255, 255, 0.075);
+    background:rgba(255, 255, 255, 0.596);
     border-radius:18px;
     padding:15px;
     text-align:center;
