@@ -3,115 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viagens</title>
+    <title>Diário de Viagens — Histórias pelo Brasil</title>
+    <meta name="description" content="Diário de viagens com histórias, roteiros e aventuras por diversos estados brasileiros.">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css" media="all">   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/style.css" media="all">
 </head>
-    <body>
-        <header>
-             
-            <menu> 
-                <a href="https://www.youtube.com/@josesoares-moreira" target="_blank"><img src="imagens/Redes Sociais/logo-youtube.jpg" alt="imagem/jpg" width="72px heidth 40px "></a>                          
-                 <a href="https://www.instagram.com/jsm.so" target="_blank"><img src="imagens/Redes Sociais/logo-instagram.jpg" alt=""></a>
-                 <a href="https://www.facebook.com/jose.soaresmoreira.3?locale=pt_BR" target="_blank"><img src="imagens/Redes Sociais/logo-facebook.jpg" alt=""></a>
-                 <a href="https://x.com/soaresmo" target="_blank"><img src="imagens/Redes Sociais/logo-x.png" alt=""></a>
-                 <a href="https://www.linkedin.com/in/jos%C3%A9-soares-6061b8239" target="_blank"><img src="imagens/Redes Sociais/lglinkedin.png" alt=""></a>
-                 <a href="https://github.com/josesoaresm" target="_blank"><img src="imagens/Redes Sociais/logo-github.jpg" alt=""></a>
-            </menu>         
-        </header>
-        
-            <nav>                
-                <a href="pessoal/index.html"><abbr title="pessoal"><img src="imagens/Redes Sociais/Meu perfio.png" alt=""></a>
-                 <a href="momentos/momentos.html"><abbr title="MOMENTOS"><img src="imagens/Redes Sociais/momento.gif" alt=""></a>    
-            </nav> 
+<body>
+    <a class="pular-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header class="topo">
+        <a class="marca" href="index.html" aria-label="Diário de Viagens — página inicial">
+            <span class="marca-icone" aria-hidden="true">✦</span>
+            <span class="marca-texto">Diário&nbsp;de&nbsp;Viagens</span>
+        </a>
+
+        <nav aria-label="Redes sociais">
+            <ul class="redes">
+                <li><a href="https://www.youtube.com/@josesoares-moreira" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="imagens/Redes Sociais/logo-youtube.jpg" alt="" width="40" height="40"></a></li>
+                <li><a href="https://www.instagram.com/jsm.so" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="imagens/Redes Sociais/logo-instagram.jpg" alt="" width="40" height="40"></a></li>
+                <li><a href="https://www.facebook.com/jose.soaresmoreira.3?locale=pt_BR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="imagens/Redes Sociais/logo-facebook.jpg" alt="" width="40" height="40"></a></li>
+                <li><a href="https://x.com/soaresmo" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="imagens/Redes Sociais/logo-x.png" alt="" width="40" height="40"></a></li>
+                <li><a href="https://www.linkedin.com/in/jos%C3%A9-soares-6061b8239" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="imagens/Redes Sociais/lglinkedin.png" alt="" width="40" height="40"></a></li>
+                <li><a href="https://github.com/josesoaresm" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="imagens/Redes Sociais/logo-github.jpg" alt="" width="40" height="40"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="nav-paginas" aria-label="Seções do site">
+        <a href="pessoal/index.html" aria-label="Perfil pessoal">
+            <img src="imagens/Redes Sociais/Meu perfio.png" alt="" width="55" height="55">
+            <span>Perfil</span>
+        </a>
+        <a href="momentos/momentos.html" aria-label="Momentos">
+            <img src="imagens/Redes Sociais/momento.gif" alt="" width="55" height="55">
+            <span>Momentos</span>
+        </a>
+    </nav>
+
+    <main id="conteudo-principal">
 
         <section class="hero">
             <div class="hero-content">
-                <h1>VIAGENS</h1>
-                <p>Histórias, roteiros e aventuras por diversos estados brasileiros.</p>
+                <p class="hero-eyebrow">caderno de bordo</p>
+                <h1>Viagens</h1>
+                <p class="hero-texto">Histórias, roteiros e aventuras por diversos estados brasileiros.</p>
+                <p class="hero-assinatura" aria-hidden="true">boa viagem</p>
             </div>
-        </section>         
-                         
-            <div class="img"> 
-                
-                <div class="ce">
-                <a href="ceara/index.html"><abbr title="CEARÁ"><img src="imagens/Bandeiras/ceara.jpg" alt=""></a><h3>CEARÁ</h3></abbr>
+        </section>
+
+        <section class="destinos" aria-labelledby="destinos-titulo">
+            <div class="destinos-cabecalho">
+                <p class="eyebrow">mapa de carimbos</p>
+                <h2 id="destinos-titulo">Escolha um destino</h2>
+                <p class="destinos-desc">Clique em um carimbo para abrir as histórias daquele estado.</p>
+            </div>
+
+            <ul class="grade-estados">
+                <li class="carimbo ce">
+                    <a href="ceara/index.html">
+                        <img src="imagens/Bandeiras/ceara.jpg" alt="Bandeira do Ceará">
+                        <span class="carimbo-nome">Ceará</span>
+                    </a>
+                </li>
+                <li class="carimbo sp">
+                    <a href="sao-paulo/index.html">
+                        <img src="imagens/Bandeiras/São Paulo.jpg" alt="Bandeira de São Paulo">
+                        <span class="carimbo-nome">São Paulo</span>
+                    </a>
+                </li>
+                <li class="carimbo pr">
+                    <a href="parana/index.html">
+                        <img src="imagens/Bandeiras/Paraná.jpg" alt="Bandeira do Paraná">
+                        <span class="carimbo-nome">Paraná</span>
+                    </a>
+                </li>
+                <li class="carimbo rj">
+                    <a href="rio-de-janeiro/index.html">
+                        <img src="imagens/Bandeiras/Rio de Janeiro.jpg" alt="Bandeira do Rio de Janeiro">
+                        <span class="carimbo-nome">Rio de Janeiro</span>
+                    </a>
+                </li>
+                <li class="carimbo rn">
+                    <a href="rio-grande-norte/index.html">
+                        <img src="imagens/Bandeiras/Rio Grande de Norte.jpg" alt="Bandeira do Rio Grande do Norte">
+                        <span class="carimbo-nome">Rio G. do Norte</span>
+                    </a>
+                </li>
+                <li class="carimbo mg">
+                    <a href="minas-gerais/index.html">
+                        <img src="imagens/Bandeiras/Minas Gerais.jpg" alt="Bandeira de Minas Gerais">
+                        <span class="carimbo-nome">Minas Gerais</span>
+                    </a>
+                </li>
+                <li class="carimbo br">
+                    <a href="brasilia/index.html">
+                        <img src="imagens/Bandeiras/Distrito Federal.jpg" alt="Bandeira do Distrito Federal">
+                        <span class="carimbo-nome">Brasília</span>
+                    </a>
+                </li>
+                <li class="carimbo pb">
+                    <a href="paraiba/index.html">
+                        <img src="imagens/Bandeiras/Paraiba.jpg" alt="Bandeira da Paraíba">
+                        <span class="carimbo-nome">Paraíba</span>
+                    </a>
+                </li>
+                <li class="carimbo ms">
+                    <a href="mato-grosso-do-sul/index.html">
+                        <img src="imagens/Bandeiras/matogrosso-do-sul.jpg" alt="Bandeira do Mato Grosso do Sul">
+                        <span class="carimbo-nome">Mato Grosso do Sul</span>
+                    </a>
+                </li>
+                <li class="carimbo rs">
+                    <a href="rio-grande-do-sul/index.html">
+                        <img src="imagens/Bandeiras/rio-grande-sul.jpg" alt="Bandeira do Rio Grande do Sul">
+                        <span class="carimbo-nome">Rio Grande do Sul</span>
+                    </a>
+                </li>
+                <li class="carimbo sc">
+                    <a href="sta.catarina/index.html">
+                        <img src="imagens/Bandeiras/sta.catarina.jpg" alt="Bandeira de Santa Catarina">
+                        <span class="carimbo-nome">Santa Catarina</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="historias" aria-label="Histórias de viagem">
+
+            <article class="postal postal--estrada">
+                <div class="postal-conteudo">
+                    <p class="postal-meta">Rodovia Carvalho Pinto · Setembro</p>
+                    <h3>Rumo a Ubatuba</h3>
+                    <p>
+                        Indo para Ubatuba,<br>
+                        Rodovia Carvalho Pinto.<br>
+                        Mês de setembro, muitas queimadas,<br>
+                        fumaça, perigo constante.<br>
+                        Tristeza de ver esta região tão bonita<br>
+                        encoberta de fumaça.
+                    </p>
                 </div>
-
-                <div class="sp">
-                <a href="sao-paulo/index.html"><abbr title="SÃO PAULO"><img src="imagens/Bandeiras/São Paulo.jpg" alt=""></a><h3>SÃO PAULO</h3></abbr>
-                </div>
-
-                <div class="pr">
-                <a href="parana/index.html"><abbr title="PARANÁ"><img src="imagens/Bandeiras/Paraná.jpg" alt=""></a><h3>PARANÁ</h3></abbr>
-                </div>
-
-                <div class="rj">
-                <a href="rio-de-janeiro/index.html"><abbr title="RIO DE JANEIRO"><img src="imagens/Bandeiras/Rio de Janeiro.jpg"  alt=""></a><h3>RIO DE JANEIRO</h3></abbr>
-                </div>
-
-                <div class="rn">
-                <a href="rio-grande-norte/index.html"><abbr title="RIO GRANDE DO NORTE"><img src="imagens/Bandeiras/Rio Grande de Norte.jpg" alt=""></a><H3>RIO G DO NORTE</H3></abbr>
-                </div>
-
-                <div class="mg">
-                <a href="minas-gerais/index.html"><abbr title="MINAS GERAIS"><img src="imagens/Bandeiras/Minas Gerais.jpg" alt=""></a><h3>MINAS GERAIS</h3></abbr> 
-                </div>
-
-                <div class="br">
-                <a href="brasilia/index.html"><abbr title="BRASÍLIA"><img src="imagens/Bandeiras/Distrito Federal.jpg" alt=""></a><h3>BRASÍLIA</h3></abbr>
-                </div>
-
-                <div class="pb">
-                <a href="paraiba/index.html"><abbr title="PARAIBA"><img src="imagens/Bandeiras/Paraiba.jpg" alt=""></a><h3>PARAÍBA</h3></abbr> 
-                </div>
-                
-                <div class="ms">
-                 <a href="mato-grosso-do-sul/index.html"><abbr title="MATO-GROSSO-DO-SUL"><img src="imagens/Bandeiras/matogrosso-do-sul.jpg" alt=""></a><h3>MATO-GROSSO</h3></abbr>
-                 </div>
-
-                 <div class="rs">
-                 <a href="rio-grande-do-sul/index.html"><abbr title="RIO-GRANDE-DO-SUL"><img src="imagens/Bandeiras/rio-grande-sul.jpg" alt=""></a><h3>RIO GRANDE DO SUL</h3></abbr>
-                 </div>
-
-                 <div class="sc">
-                 <a href="sta.catarina/index.html"><abbr title="SANTA CATARINA"><img src="imagens/Bandeiras/sta.catarina.jpg" alt=""></a><h3>SANTA CATARINA</h3></abbr>
-                 </div>               
-            </div> 
-            
-            <article class="clicar">
-                Ao clicar na bandeirinha será redirecionado para as histórias de cada viagem
             </article>
 
-        <section id="img">
-            <p id="img">        
-                Indo para Ubatuba, <br>
-                Rodovia Carvalho Pinto.<br>
-                mês de setembro muitas queimadas<br>
-                fumaça perigo contante <br>
-                Tristeza de ver esta região tão bonita <br>
-                emcoberta de fumaça
-            </p>
-        </section>
-                    
-        <section id="img2">
-            <p id="img2">        
-                Em julho de 2018, fiz uma viagem solo pela BR 101, avançando em direção à divisa entre São Paulo e Rio de Janeiro. Faltavam ainda 23 quilômetros para chegar a Paraty. Ao alcançar meu destino, decidi descansar um pouco antes de retornar a Ubatuba, completando assim um percurso total de 172 quilômetros. A jornada foi realizada durante a manhã, aproveitando o tempo bom e ensolarado. O céu claro proporcionava uma vista deslumbrante das paisagens ao longo do caminho. Cada momento dessa viagem foi um convite para apreciar a serenidade e a beleza natural que me cercava.  
-            </p>
-        </section>                  
-                            
-        <section class="lago"> 
-                <p class="lago">
-                O Lago de Furnas em Capitólio, Minas Gerais, é uma verdadeira joia natural. Este lago é parte da Represa de Furnas, que é uma das maiores do Brasil, com uma área de aproximadamente 1.440 km²2. O lago é conhecido como o "mar de Minas" devido à sua imponência e beleza
-            </p>                                 
-        </section>                     
-      
-    </body>          
-       <footer>
-           <p>
-             &copy; 2025 — Diário de Viagens pelo Brasil
-           </p>
-        </footer> 
+            <article class="postal postal--paraty">
+                <div class="postal-conteudo">
+                    <p class="postal-meta">BR-101 · Julho de 2018 · 172 km</p>
+                    <h3>Solo até Paraty</h3>
+                    <p>
+                        Em julho de 2018, fiz uma viagem solo pela BR-101, avançando em direção à divisa entre
+                        São Paulo e Rio de Janeiro. Faltavam ainda 23 quilômetros para chegar a Paraty. Ao
+                        alcançar meu destino, decidi descansar um pouco antes de retornar a Ubatuba, completando
+                        assim um percurso total de 172 quilômetros. A jornada foi realizada durante a manhã,
+                        aproveitando o tempo bom e ensolarado. O céu claro proporcionava uma vista deslumbrante
+                        das paisagens ao longo do caminho. Cada momento dessa viagem foi um convite para
+                        apreciar a serenidade e a beleza natural que me cercava.
+                    </p>
+                </div>
+            </article>
 
-    
-    </html>
+            <article class="postal postal--lago">
+                <div class="postal-conteudo">
+                    <p class="postal-meta">Capitólio · Minas Gerais</p>
+                    <h3>O mar de Minas</h3>
+                    <p>
+                        O Lago de Furnas em Capitólio, Minas Gerais, é uma verdadeira joia natural. Este lago é
+                        parte da Represa de Furnas, uma das maiores do Brasil, com uma área de aproximadamente
+                        1.440 km². O lago é conhecido como o "mar de Minas" devido à sua imponência e beleza.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 — Diário de Viagens pelo Brasil</p>
+    </footer>
+</body>
+</html>
