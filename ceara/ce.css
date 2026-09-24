@@ -32,48 +32,112 @@ body{
 
 /*=================================== HEADER ============================= */
 
-header{
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:999;
-    backdrop-filter:blur(15px);
-    background:rgba(15,23,42,.85);
-    padding:15px 0;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+
+.topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(15, 23, 42, 0.90);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-header h1{
-    color:white;
-    text-align:center;
-    font-size:2rem;
-    font-weight:700;
-    letter-spacing:3px;
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-/*===================================== MENU ==================================*/
-
-nav{
-    position:fixed;
-    top:15px;
-    left:20px;
-    z-index:1000;
-    display:flex;
-    gap:12px;
+.marca h1 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
-nav img{
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    border:2px solid rgb(56, 39, 39);
-
-    transition:.4s;
+/* Ícone Home */
+.logo-home {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-nav img:hover{
-    transform:translateY(-5px) scale(1.1);
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
+.logo-home:hover {
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+/*===================================== REDES SOCIAIS ==================================*/
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redes img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.redes a:hover img,
+.redes a:focus-visible img {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Espaçamento superior do conteúdo para não ficar oculto atrás do topo fixo */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 110px 20px 50px; /* Ajustado de 80px para 110px */
+}
+
+/*===================================== RESPONSIVIDADE (CELULAR) ==================================*/
+
+@media (max-width: 768px) {
+    .topo {
+        flex-direction: column;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .marca h1 {
+        font-size: 1.4rem;
+    }
+
+    .logo-home {
+        width: 38px;
+        height: 38px;
+    }
+
+    .redes img {
+        width: 30px;
+        height: 30px;
+    }
+
+    main {
+        padding-top: 130px;
+    }
 }
 
 /*======================================= MAIN =================================*/
