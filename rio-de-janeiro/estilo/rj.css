@@ -28,16 +28,74 @@
     }
 
     /* Header e Navegação */
-    header {     
-        position:fixed;
-        top:0;
-        width:100%;
-        z-index:1000;
-        backdrop-filter:blur(15px);
-        background:rgba(15,23,42,.9);
-        padding:15px;
-        box-shadow:0 4px 20px rgba(0,0,0,.2);
-    }
+    .topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(15, 23, 42, 0.90);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.marca h1 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* Ícone Home */
+.logo-home {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-home:hover {
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+/*===================================== REDES SOCIAIS ==================================*/
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redes img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.redes a:hover img,
+.redes a:focus-visible img {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+}
 
     h1 {
         font-size: 1.8rem;
@@ -72,27 +130,7 @@
         text-align: center;
     }
 
-    nav{
-        position: fixed;
-        left: 15px;
-        top: 80px;
-        display:flex;
-        flex-direction:column;
-        gap:0px;
-        z-index:100;
-    }
-
-    nav img{
-        width:35px;
-        height:35px;
-        border-radius:50%;
-        transition:.3s;
-        box-shadow:0 4px 12px rgba(0,0,0,.2);
-    }
-
-    nav img:hover{
-        transform:scale(1.1);
-    }
+   
 
     /* Conteúdo Principal */
     main { 
