@@ -329,7 +329,7 @@ button:focus-visible {
     aspect-ratio: 1 / 1;
     justify-content: center;
     background: var(--cor-branco);
-    border: 3px dashed var(--cor-carimbo);
+    border: 1px dashed var(--cor-carimbo);
     box-shadow: 0 8px 18px rgba(35, 41, 31, .12);
     transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
 }
